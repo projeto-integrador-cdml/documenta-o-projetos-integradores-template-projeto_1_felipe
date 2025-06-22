@@ -1,3 +1,0 @@
-# Introdução
-
-Descreva o contexto, o problema que o projeto pretende resolver e os objetivos gerais.

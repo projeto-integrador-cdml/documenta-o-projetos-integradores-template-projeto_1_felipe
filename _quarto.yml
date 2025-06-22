@@ -1,0 +1,34 @@
+# Arquivo: _quarto.yml
+
+project:
+  type: book
+  output-dir: _build # Pasta onde o documento final será salvo
+
+book:
+  title: "Ciência de Dados na Nutrição"
+  author: "Felipe Teodoro\n
+    Emanuela Araújo\n
+    João Vitor\n
+    Lucas Wall\n
+    Mateo Wall\n
+    Victor Vanazzi"
+  chapters:
+    - index.qmd
+    - 02-metodologia.qmd
+    - 03-desenvolvimento.qmd
+    - 04-resultados.qmd
+    - 05-conclusao.qmd
+    - referencias.qmd
+
+# Define o formato de saída. Pode ser pdf, html, docx, etc.
+format:
+  pdf:
+    toc: true # Adiciona um sumário
+    documentclass: report
+    include-after-body: contracapa.tex # Inclui sua contracapa
+  html:
+    theme: cosmo
+    toc: true
+
+# Aponta para o arquivo de bibliografia
+bibliography: refs.bib

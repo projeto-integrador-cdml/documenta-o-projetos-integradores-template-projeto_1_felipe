@@ -4,8 +4,3 @@ Detalhe o processo de implementação.
 
 ## Arquitetura da Solução
 
-```{r}
-#| label: fig-arquitetura
-#| fig-cap: "Arquitetura do sistema proposto"
-knitr::include_graphics("imagens/arquitetura.png")
-```

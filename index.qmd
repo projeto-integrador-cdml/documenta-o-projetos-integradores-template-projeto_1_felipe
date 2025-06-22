@@ -1,3 +1,28 @@
-# Projeto Integrador III
+# Introdução
 
-Este documento apresenta a documentação formal do projeto de inteligência artificial desenvolvido pela equipe como parte da disciplina Projeto Integrador III.
+## Contexto
+O Brasil enfrenta um cenário nutricional complexo e paradoxal, caracterizado pela dupla carga da má nutrição. 
+Por um lado, persistem desafios relacionados à desnutrição e deficiências de micronutrientes em grupos vulneráveis.
+Por outro, dados de inquéritos nacionais como a Pesquisa Nacional de Saúde (PNS) e a Pesquisa de Orçamentos Familiares (POF) revelam um avanço alarmante do sobrepeso e da obesidade em todas as faixas etárias e classes sociais, consolidando uma epidemia de doenças crônicas não transmissíveis (DCNT).
+Este panorama contrasta diretamente com as diretrizes do Guia Alimentar para a População Brasileira, um documento de referência mundial que preconiza uma alimentação baseada em alimentos in natura e minimamente processados.
+ A realidade, no entanto, é marcada por um consumo crescente de alimentos ultraprocessados, impulsionado por fatores como praticidade, baixo custo aparente e marketing agressivo, criando um abismo entre a recomendação e a prática diária da população.
+
+## O Problema a ser Resolvido
+A principal barreira para uma alimentação saudável no Brasil, especialmente para a população de baixa renda, não é meramente a falta de informação, mas sim a viabilidade e a percepção.
+Para uma vasta parcela da sociedade, o termo "dieta" é carregado de conotações negativas, sendo associado a punição, restrição, alto custo e pratos sem sabor.
+O problema se intensifica em "momentos-gatilho" — como o cansaço ao final de um longo dia de trabalho, o estresse financeiro no fim do mês ou a necessidade de uma recompensa imediata na sexta à noite.
+Nesses momentos, a escolha por fast food, delivery ou ultraprocessados torna-se o caminho de menor resistência, não por falta de desejo por uma vida mais saudável, mas pela ausência de alternativas que sejam percebidas como igualmente práticas, acessíveis, prazerosas e culturalmente relevantes.
+O desafio central, portanto, é quebrar o ciclo em que "comer bem" é visto como um privilégio e "comer o que é fácil" é a única opção realista.
+
+## Objetivos do Projeto
+Diante deste complexo problema, o objetivo geral deste projeto é desenvolver uma solução de Inteligência Artificial que atue como um "assistente nutricional" prático, empático e acessível, com foco na população de baixa renda.
+A meta não é prescrever dietas restritivas, mas sim empoderar os usuários a fazerem pequenas e sustentáveis melhorias em sua alimentação diária.
+Para alcançar este objetivo macro, o projeto se baseia nos seguintes pilares:
+
+1. Desmistificar a Alimentação Saudável: Utilizar a IA para reformular a narrativa em torno da "dieta", focando no prazer, na abundância e na valorização da culinária brasileira (como o arroz com feijão). O sistema deve comunicar benefícios de forma positiva e tangível, evitando linguagem punitiva ou excessivamente técnica.
+
+2. Oferecer "Trocas Inteligentes" Contextuais: Criar um modelo de busca por similaridade que vá além dos nutrientes. O sistema deverá compreender a intenção e o contexto do usuário (ex: "quero um lanche rápido e gostoso") e sugerir alternativas que sejam não apenas mais saudáveis, mas também realistas em termos de custo, tempo de preparo e disponibilidade de ingredientes.
+
+3.Integrar Custo e Acessibilidade como Fatores Centrais: Tornar os dados de preços de alimentos em tempo real um componente fundamental do sistema de recomendação. O objetivo é garantir que as sugestões sejam financeiramente viáveis e ajudem o usuário a otimizar seu orçamento.
+
+4. Criar uma Experiência Empática e Orientada à Ação: Desenvolver uma interface (UI/UX) e uma linguagem que sejam acolhedoras, especialmente nos "momentos-gatilho". A solução deve ser proativa, oferecendo ajuda e alternativas fáceis exatamente quando o usuário mais precisa, transformando o que seria um momento de escolha automática e prejudicial em uma oportunidade de decisão consciente e positiva.

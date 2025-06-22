@@ -1,0 +1,102 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ciência de Dados na Nutrição",
+    "section": "",
+    "text": "1 Introdução",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introdução</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#contexto",
+    "href": "index.html#contexto",
+    "title": "Ciência de Dados na Nutrição",
+    "section": "1.1 Contexto",
+    "text": "1.1 Contexto\nO Brasil enfrenta um cenário nutricional complexo e paradoxal, caracterizado pela dupla carga da má nutrição. Por um lado, persistem desafios relacionados à desnutrição e deficiências de micronutrientes em grupos vulneráveis. Por outro, dados de inquéritos nacionais como a Pesquisa Nacional de Saúde (PNS) e a Pesquisa de Orçamentos Familiares (POF) revelam um avanço alarmante do sobrepeso e da obesidade em todas as faixas etárias e classes sociais, consolidando uma epidemia de doenças crônicas não transmissíveis (DCNT). Este panorama contrasta diretamente com as diretrizes do Guia Alimentar para a População Brasileira, um documento de referência mundial que preconiza uma alimentação baseada em alimentos in natura e minimamente processados. A realidade, no entanto, é marcada por um consumo crescente de alimentos ultraprocessados, impulsionado por fatores como praticidade, baixo custo aparente e marketing agressivo, criando um abismo entre a recomendação e a prática diária da população.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introdução</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#o-problema-a-ser-resolvido",
+    "href": "index.html#o-problema-a-ser-resolvido",
+    "title": "Ciência de Dados na Nutrição",
+    "section": "1.2 O Problema a ser Resolvido",
+    "text": "1.2 O Problema a ser Resolvido\nA principal barreira para uma alimentação saudável no Brasil, especialmente para a população de baixa renda, não é meramente a falta de informação, mas sim a viabilidade e a percepção. Para uma vasta parcela da sociedade, o termo “dieta” é carregado de conotações negativas, sendo associado a punição, restrição, alto custo e pratos sem sabor. O problema se intensifica em “momentos-gatilho” — como o cansaço ao final de um longo dia de trabalho, o estresse financeiro no fim do mês ou a necessidade de uma recompensa imediata na sexta à noite. Nesses momentos, a escolha por fast food, delivery ou ultraprocessados torna-se o caminho de menor resistência, não por falta de desejo por uma vida mais saudável, mas pela ausência de alternativas que sejam percebidas como igualmente práticas, acessíveis, prazerosas e culturalmente relevantes. O desafio central, portanto, é quebrar o ciclo em que “comer bem” é visto como um privilégio e “comer o que é fácil” é a única opção realista.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introdução</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#objetivos-do-projeto",
+    "href": "index.html#objetivos-do-projeto",
+    "title": "Ciência de Dados na Nutrição",
+    "section": "1.3 Objetivos do Projeto",
+    "text": "1.3 Objetivos do Projeto\nDiante deste complexo problema, o objetivo geral deste projeto é desenvolver uma solução de Inteligência Artificial que atue como um “assistente nutricional” prático, empático e acessível, com foco na população de baixa renda. A meta não é prescrever dietas restritivas, mas sim empoderar os usuários a fazerem pequenas e sustentáveis melhorias em sua alimentação diária. Para alcançar este objetivo macro, o projeto se baseia nos seguintes pilares:\n\nDesmistificar a Alimentação Saudável: Utilizar a IA para reformular a narrativa em torno da “dieta”, focando no prazer, na abundância e na valorização da culinária brasileira (como o arroz com feijão). O sistema deve comunicar benefícios de forma positiva e tangível, evitando linguagem punitiva ou excessivamente técnica.\nOferecer “Trocas Inteligentes” Contextuais: Criar um modelo de busca por similaridade que vá além dos nutrientes. O sistema deverá compreender a intenção e o contexto do usuário (ex: “quero um lanche rápido e gostoso”) e sugerir alternativas que sejam não apenas mais saudáveis, mas também realistas em termos de custo, tempo de preparo e disponibilidade de ingredientes.\n\n3.Integrar Custo e Acessibilidade como Fatores Centrais: Tornar os dados de preços de alimentos em tempo real um componente fundamental do sistema de recomendação. O objetivo é garantir que as sugestões sejam financeiramente viáveis e ajudem o usuário a otimizar seu orçamento.\n\nCriar uma Experiência Empática e Orientada à Ação: Desenvolver uma interface (UI/UX) e uma linguagem que sejam acolhedoras, especialmente nos “momentos-gatilho”. A solução deve ser proativa, oferecendo ajuda e alternativas fáceis exatamente quando o usuário mais precisa, transformando o que seria um momento de escolha automática e prejudicial em uma oportunidade de decisão consciente e positiva.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introdução</span>"
+    ]
+  },
+  {
+    "objectID": "02-metodologia.html",
+    "href": "02-metodologia.html",
+    "title": "2  Metodologia",
+    "section": "",
+    "text": "2.1 Tecnologias e Ferramentas\nPara garantir a agilidade, a adaptabilidade e o foco no impacto social, o desenvolvimento deste projeto será norteado por uma metodologia híbrida, combinando princípios do Scrum (Breves reuniões par alinhamento de tarefas), para gestão de tarefas e entregas iterativas, com o CRISP-DM, para guiar as etapas do ciclo de vida da ciência de dados. Essa abordagem nos permite construir e validar hipóteses rapidamente em sprints de uma ou duas semanas, enquanto mantemos uma estrutura robusta para a exploração de dados e modelagem.\nO fluxo de desenvolvimento é dividido nas seguintes etapas macro:",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Metodologia</span>"
+    ]
+  },
+  {
+    "objectID": "02-metodologia.html#tecnologias-e-ferramentas",
+    "href": "02-metodologia.html#tecnologias-e-ferramentas",
+    "title": "2  Metodologia",
+    "section": "",
+    "text": "Python como linguagem principal para ciência de dados e backend.\nAlgum tipo de banco de dados relacional para a relação dos preços atualizados em tempo real\nBERT (via Hugging Face Transformers) & PyTorch para o treinamento do modelo de linguagem, permitindo a criação dos embeddings contextuais customizados.\nFAISS (Facebook AI Similarity Search) será a base de dados vetorizada. Após o fine-tuning do BERT, os embeddings de todas as receitas serão armazenados e indexados no FAISS para permitir buscas por similaridade em tempo real com baixíssima latência.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Metodologia</span>"
+    ]
+  },
+  {
+    "objectID": "03-desenvolvimento.html",
+    "href": "03-desenvolvimento.html",
+    "title": "3  Desenvolvimento",
+    "section": "",
+    "text": "3.1 Arquitetura da Solução\nDetalhe o processo de implementação.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Desenvolvimento</span>"
+    ]
+  },
+  {
+    "objectID": "04-resultados.html",
+    "href": "04-resultados.html",
+    "title": "4  Resultados",
+    "section": "",
+    "text": "Apresente resultados do funcionamento do sistema, testes e validações.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Resultados</span>"
+    ]
+  },
+  {
+    "objectID": "05-conclusao.html",
+    "href": "05-conclusao.html",
+    "title": "5  Conclusão",
+    "section": "",
+    "text": "Apresente as principais conclusões, dificuldades enfrentadas, próximos passos e sugestões.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Conclusão</span>"
+    ]
+  },
+  {
+    "objectID": "referencias.html",
+    "href": "referencias.html",
+    "title": "6  Referências",
+    "section": "",
+    "text": "As referências estão organizadas no arquivo .bib e serão exibidas automaticamente.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Referências</span>"
+    ]
+  }
+]

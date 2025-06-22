@@ -2,8 +2,3 @@
 
 Apresente resultados do funcionamento do sistema, testes e validações.
 
-```{r}
-#| label: fig-dashboard
-#| fig-cap: "Tela do sistema funcional com fluxo N8N"
-knitr::include_graphics("imagens/dashboard.png")
-```
