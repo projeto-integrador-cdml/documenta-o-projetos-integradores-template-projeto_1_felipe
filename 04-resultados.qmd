@@ -2,3 +2,58 @@
 
 Apresente resultados do funcionamento do sistema, testes e validações.
 
+## Resultados da Análise de Concorrência
+
+Para fundamentar o desenvolvimento desta solução, foi conduzida uma análise detalhada dos principais aplicativos de nutrição disponíveis no mercado brasileiro, com foco específico em identificar oportunidades estratégicas para atender pessoas com diabetes e usuários com restrições orçamentárias.
+
+### Metodologia da Análise
+
+A análise foi realizada através da avaliação sistemática de dados de usuários, incluindo comentários e avaliações em lojas de aplicativos, permitindo uma compreensão profunda das demandas não atendidas pelo mercado atual.
+
+### Aplicativos Analisados
+
+**1. Smart Fit Nutri**
+- **Resumo**: Aplicativo integrado ao ecossistema Smart Fit, focado em avaliação física, bioimpedância e consultas online com nutricionistas
+- **Diferenciais**: Planos personalizados, acompanhamento profissional e integração com academias
+- **Limitações para diabéticos**: Não oferece funcionalidades específicas como contagem de carboidratos líquidos, índice glicêmico ou integração com glicosímetros
+- **Principais lacunas identificadas**: Ausência de lista de compras, substituições nos cardápios, diário alimentar com contagem de macros
+
+**2. Macros – Contador de Calorias**
+- **Resumo**: Focado em contagem de calorias e macronutrientes, com biblioteca de alimentos personalizável
+- **Diferenciais**: Cálculo de net carbs, biblioteca colaborativa de alimentos
+- **Limitações**: Falta de integração com apps de saúde, ausência de modo offline, funcionalidades limitadas para rastreamento de evolução
+
+**3. YAZIO**
+- **Resumo**: Aplicativo de emagrecimento que combina contador de calorias, jejum intermitente e receitas
+- **Diferenciais**: Interface moderna, rastreador de jejum, foco motivacional
+- **Limitações para diabéticos**: Aparentemente sem recursos específicos para diabetes, como índice glicêmico ou monitoramento de glicose
+
+**4. FatSecret**
+- **Resumo**: Controle alimentar com foco em comunidade e base extensa de alimentos
+- **Diferenciais**: Versão gratuita robusta, comunidade ativa, integração com Google Fit
+- **Limitações**: Falta de precisão para diabéticos, ausência de net carbs e índice glicêmico, apenas 4 refeições diárias
+
+### Principais Oportunidades Identificadas
+
+**Lacunas Específicas para Diabéticos:**
+- Ausência de índice glicêmico na maioria dos aplicativos
+- Falta de integração com monitores de glicose
+- Ausência de contagem de carboidratos líquidos em vários apps
+- Controle refinado insuficiente para necessidades metabólicas específicas
+
+**Demandas Econômicas Não Atendidas:**
+- Nenhum aplicativo oferece comparação de preços de alimentos
+- Ausência de funcionalidades de otimização de custo vs. valor nutricional
+- Falta de sugestões de substituições econômicas mantendo valor nutricional
+- Inexistência de lista de compras otimizada por custo
+
+**Funcionalidades Solicitadas pelos Usuários:**
+- Suporte a dados da TACO (Tabela Brasileira de Composição de Alimentos)
+- Criação automática de cardápios baseados em preferências e restrições
+- Lista de compras integrada com planejamento semanal
+- Reconhecimento de alimentos por IA
+- Melhor personalização de refeições e horários
+
+### Posicionamento Estratégico
+
+A análise revelou uma oportunidade única de mercado: nenhum dos aplicativos analisados combina adequadamente o atendimento às necessidades específicas de pessoas com diabetes com soluções econômicas para otimização de custos alimentares. Esta lacuna representa o diferencial competitivo central do projeto proposto, posicionando-o como pioneiro na intersecção entre saúde especializada e acessibilidade econômica.
