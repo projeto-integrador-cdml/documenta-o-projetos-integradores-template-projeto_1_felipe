@@ -23,6 +23,6 @@ Para alcançar este objetivo macro, o projeto se baseia nos seguintes pilares:
 
 2. Oferecer "Trocas Inteligentes" Contextuais: Criar um modelo de busca por similaridade que vá além dos nutrientes. O sistema deverá compreender a intenção e o contexto do usuário (ex: "quero um lanche rápido e gostoso") e sugerir alternativas que sejam não apenas mais saudáveis, mas também realistas em termos de custo, tempo de preparo e disponibilidade de ingredientes.
 
-3.Integrar Custo e Acessibilidade como Fatores Centrais: Tornar os dados de preços de alimentos em tempo real um componente fundamental do sistema de recomendação. O objetivo é garantir que as sugestões sejam financeiramente viáveis e ajudem o usuário a otimizar seu orçamento.
+3. Integrar Custo e Acessibilidade como Fatores Centrais: Tornar os dados de preços de alimentos em tempo real um componente fundamental do sistema de recomendação. O objetivo é garantir que as sugestões sejam financeiramente viáveis e ajudem o usuário a otimizar seu orçamento.
 
 4. Criar uma Experiência Empática e Orientada à Ação: Desenvolver uma interface (UI/UX) e uma linguagem que sejam acolhedoras, especialmente nos "momentos-gatilho". A solução deve ser proativa, oferecendo ajuda e alternativas fáceis exatamente quando o usuário mais precisa, transformando o que seria um momento de escolha automática e prejudicial em uma oportunidade de decisão consciente e positiva.
