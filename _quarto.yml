@@ -32,3 +32,6 @@ format:
 
 # Aponta para o arquivo de bibliografia
 bibliography: refs.bib
+
+nocite:
+  - '@*' # Inclui todas as referências da bibliografia, mesmo que não sejam citadas no texto

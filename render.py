@@ -27,15 +27,15 @@ def render_quarto_project():
         print("\n--- Saída do Quarto ---")
         print(result.stdout)
         print("-----------------------\n")
-        print("✅ Projeto renderizado com sucesso!")
+        print("Projeto renderizado com sucesso!")
 
     except FileNotFoundError:
-        print("❌ Erro: O comando 'quarto' não foi encontrado.")
+        print("Erro: O comando 'quarto' não foi encontrado.")
         print("Verifique se o Quarto está instalado e se o seu diretório 'bin' foi adicionado ao PATH do sistema.")
         print("Pode ser necessário reiniciar o VS Code ou o computador após a instalação.")
 
     except subprocess.CalledProcessError as e:
-        print("❌ Erro ao renderizar o projeto Quarto.")
+        print("Erro ao renderizar o projeto Quarto.")
         print(f"O processo retornou o código de erro: {e.returncode}")
         print("\n--- Saída de Erro do Quarto ---")
         print(e.stderr)

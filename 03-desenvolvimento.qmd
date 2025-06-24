@@ -1,4 +1,4 @@
-# Desenvolvimento (Possíveis abordagens)
+# Desenvolvimento
 
 O processo de implementação do projeto foi estruturado em fases sequenciais e iterativas. Cada fase foi projetada para construir uma parte fundamental da solução, permitindo validações contínuas e garantindo que o produto final esteja alinhado com os objetivos de impacto social e viabilidade técnica.
 
