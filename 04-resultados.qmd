@@ -57,3 +57,144 @@ A análise foi realizada através da avaliação sistemática de dados de usuár
 ### Posicionamento Estratégico
 
 A análise revelou uma oportunidade única de mercado: nenhum dos aplicativos analisados combina adequadamente o atendimento às necessidades específicas de pessoas com diabetes com soluções econômicas para otimização de custos alimentares. Esta lacuna representa o diferencial competitivo central do projeto proposto, posicionando-o como pioneiro na intersecção entre saúde especializada e acessibilidade econômica.
+
+### Comparação de Aplicativos Concorrentes
+
+### **1. MyFitnessPal**
+
+* Perguntas feitas: peso atual, meta de peso e nível de atividade.
+
+  * Explicações direcionadas para leigos.
+  * Se você trabalha sentado, é classificado como “pouco ativo”, mesmo que treine.
+* Sincronizado com o app Health do iPhone.
+* Monitora: macros, nutrientes e calorias; adaptável à dieta.
+* Seção de receitas com macros detalhados e hashtags como gluten free, dairy free, low carb, low sugar, vegetarian, etc.
+* Seção com exercícios para fazer em casa.
+* Sincroniza treinos de outros apps (como relógios e apps de celular).
+* Mapa com tracking de progresso.
+* Possibilidade de criar suas próprias receitas.
+* Permite adicionar amigos no app.
+* Rastreamento de água.
+
+---
+
+### **2. Tecnonutri**
+
+* Apresentado por uma assistente virtual.
+* Requer aceitar os termos de uso.
+* Perguntas feitas: objetivo (emagrecer, ganhar massa), gênero, peso, altura, meta de peso, data de nascimento.
+* Dashboard principal mostra contagem de fibras.
+* Parceria com o programa **Vitat**: contato com especialistas gratuitamente.
+* Rastreamento de água diária.
+* Exercício deve ser adicionado manualmente; não sincroniza com outros apps.
+* Possível adicionar foto do prato junto ao cardápio.
+* Muitas opções de comida, mas não reconheceu algumas marcas.
+* Seção com comunidade para se inspirar em cardápios de outras pessoas.
+* Sistema de “XP” por uso contínuo que rende medalhas.
+* Acesso a receitas e programas apenas na versão PRO.
+* Seção com exercícios para fazer em casa.
+
+---
+
+### **3. Programa Mais Saúde (Vitat)**
+
+* Apresentado por assistente virtual.
+* Requer aceitar os termos de uso.
+* Para benefícios, é necessário ter conta no Wellhub (ex-Gympass).
+* Perguntas detalhadas sobre:
+
+  * Saúde geral (doenças, hábitos, sono, emoções, alimentação, atividade física).
+* Ao final, gera uma **nota de saúde**.
+* Parceria com especialistas: análise de refeições via WhatsApp.
+* Possível agendar testes e exames pelo app.
+* Permite adicionar treinos e refeições.
+* Versão PRO:
+
+  * Descontos em farmácias, hospitais e marcas de suplementos.
+  * Acesso a comunidades para se inspirar.
+  * Agendamento de bioimpedâncias.
+
+---
+
+### **4. Alimente-se**
+
+* Perguntas feitas: objetivo, nível de atividade, aniversário, gênero, peso, altura, meta de peso, preferências alimentares, número de refeições por dia (mínimo 6), meta em semanas.
+* Notificação para beber água.
+* Função para comparar macros de dois alimentos diferentes.
+* Rastreamento diário de água e exercício.
+* Versão PRO:
+
+  * Mostra macros diários.
+  * Libera a dieta completa (gratuito mostra só o primeiro dia).
+* Área de receitas com filtros por:
+
+  * Dificuldade, tempo, dieta, refeição, macros, ingredientes, utensílios, datas comemorativas, modo de preparo, líquidos.
+  * Todas as receitas mostram calorias, mas não os macros.
+* Permite adicionar medidas corporais e dobras cutâneas (para % de gordura corporal).
+
+---
+
+### **5. Fastic**
+
+* Perguntas feitas:
+
+  * Objetivo, gênero, data de nascimento, peso, altura, peso-alvo.
+  * Nível de atividade, rotina de trabalho, conhecimento sobre nutrição, tentativas anteriores de jejum, doenças, hábitos alimentares, motivações, habilidades na cozinha, frequência de comer fora, etc.
+* Requer aceitar os termos de uso.
+* Versão PRO:
+
+  * Macros do dia, contador de jejum e receitas.
+* Gratuito:
+
+  * Rastreamento de água, passos, peso e exercício.
+  * Apenas permite adicionar cardápio diário.
+* Interface principal considerada confusa.
+
+---
+
+### **6. MyDietCoach**
+
+* Requer aceitar os termos de uso.
+* Perguntas feitas: objetivo, gênero, altura, peso, peso ideal, nível de atividade, intensidade da dieta, tipo de dieta.
+* Permite criar receitas.
+* Rastreamento de água.
+* Conexão com app Health do iPhone para rastrear exercícios.
+* App simples e direto.
+
+---
+
+### **7. Diet: WeightLoss**
+
+* Perguntas feitas: objetivo, peso-alvo, nível de atividade.
+* Sincroniza com o Health do iPhone (importa dados automaticamente).
+* Vem com refeições montadas; duas opções por cardápio.
+* Não mostra os macros de cada refeição.
+* Não permite adicionar refeições próprias.
+* Refeições são muito elaboradas, pouco acessíveis à realidade brasileira.
+* Quase todas as funções exigem a versão PRO.
+
+---
+
+### **8. FitLab**
+
+* Conecta automaticamente com o Health do iPhone.
+* Perguntas feitas: objetivo (perder gordura, ganhar massa), frequência de treinos, funcionamento intestinal, restrições alimentares, data de nascimento, gênero, peso, altura, peso-alvo.
+* Requer cadastro com número de celular.
+* Problemas no cadastro: erro ao carregar, não foi possível usar o app.
+
+---
+
+### **9. FoodAI**
+
+* Perguntas feitas:
+
+  * Através de chatbot: permite perguntas como “Me sinto culpado depois de comer, o que faço?” ou “Tenho metabolismo lento, sugira refeições”.
+* App fornece dieta já montada com:
+
+  * Ingredientes, modo de preparo, benefícios e valores nutricionais (macros e calorias).
+* Substituição de pratos por IA requer versão PRO.
+* Registrar cardápio próprio também exige versão PRO.
+* Gratuito:
+
+  * Rastreamento de exercício, água e gráficos de evolução.
+* Câmera para análise do prato (requer descrição detalhada do conteúdo do prato).
