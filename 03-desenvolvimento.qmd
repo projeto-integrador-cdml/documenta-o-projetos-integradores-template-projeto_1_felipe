@@ -1,18 +1,49 @@
 # Desenvolvimento
 
-O processo de implementação do projeto foi estruturado em fases sequenciais e iterativas. Cada fase foi projetada para construir uma parte fundamental da solução, permitindo validações contínuas e garantindo que o produto final esteja alinhado com os objetivos de impacto social e viabilidade técnica.
+O processo de desenvolvimento do projeto foi estruturado em fases sequenciais e iterativas. Cada fase foi projetada para construir uma parte fundamental da solução, permitindo validações contínuas e garantindo que o produto final esteja alinhado com os objetivos de impacto social e viabilidade técnica.
 
-1. Fundamentação e Coleta de Dados: A fase inicial consiste na criação de um dataset proprietário através de web scraping em portais de receitas brasileiros. O foco é capturar não apenas ingredientes e modo de preparo, mas metadados contextuais ricos, como tags, tempo de preparo e avaliações de usuários.
+## Etapa inicial
 
-2. Engenharia de Features e Geração dos Triplets: Utilizando o dataset bruto, implementar o script do "Funil Inteligente" em Python com Pandas para gerar scores heurísticos (saudabilidade, complexidade, custo) e, com base neles, gerar automaticamente o dataset de treinamento triplets.csv.
+### 1. Fundamentação e Coleta de Dados: 
 
-3. Fine-Tuning e Geração de Embeddings: Nesta fase, o modelo Transformer neuralmind/bert-base-portuguese-cased será especializado através de um processo de fine-tuning com a estratégia TripletLoss, aprendendo a mapear o texto das receitas para um espaço vetorial onde a proximidade matemática reflete a similaridade contextual.
+A coleta de dados e as análises iniciais foram divididas em 3 etapas:
 
-4. Construção da Infraestrutura de Busca e API: Os embeddings gerados seriam indexados em uma base de dados vetorial FAISS. Em paralelo, foi desenvolvida a API principal em FastAPI.
+1- **Criação de um dataset proprietário através de web scraping em portais de receitas brasileiros**
+O intuito é capturar não apenas ingredientes e modo de preparo, mas também metadados contextuais ricos, como tags, tempo de preparo e avaliações de usuários.
 
-5. Implementação do Frontend e da Lógica de Conversação: A interface seria desenvolvida com foco na experiência do usuário. Implementar algum fluxo para orquestrar a comunicação entre a busca no FAISS e a geração de texto da OpenAI.
+2- **Guia Alimentar para a População Brasileira**
+O objetivo principal dessa etapa é mapear os princípios do Guia, a fim de aprimorar a fundamentação teórica do projeto.
 
-6. Automação e DevOps: Configurados pipelines em GitHub Actions para CI/CD e workflows no N8N para tarefas recorrentes, como a atualização de preços.
+O Guia Alimentar para a População Brasileira é uma das estratégias para implementação da diretriz de promoção da alimentação adequada e saudável que integra a Política Nacional de Alimentação e Nutrição. Por este motivo, seus princípios serão tomados como base para todas as etapas posteriores do desenvolvimento deste projeto.
+
+3- **Dados de preços históricos do CEPEA**
+
+O Centro de Estudos Avançados em Economia Aplicada (CEPEA) publica indicadores de preços para diversos produtos agropecuários. O intuito da coleta inicial é reunir dados históricos dos preços dos produtos a fim de possibilitar uma análise das séries temporais e identificação de tendências de mercado e sazonalidades.
+
+De acordo com dados divulgados pela Organização Mundial da Saúde em 2009, o consumo insuficiente de frutas e vegetais está entre os dez principais fatores de risco de morte por todas as causas. Entre as populações de média renda estima-se que ocorra 0,9 milhões de mortes atribuídas a este fator de risco anualmente (3,9% do total de mortes) e para a população de alta renda, aproximadamente, 0,2 milhões de mortes anualmente (2,5% do total de mortes). 
+A partir dessa informação, a coleta e análise exploratória dos dados de hortifruti do CEPEA foram priorizados
+
+## Próximos passos:
+
+### 2. Engenharia de Features e Geração dos Triplets: 
+
+Utilizando o dataset bruto, implementar o script do "Funil Inteligente" em Python com Pandas para gerar scores heurísticos (saudabilidade, complexidade, custo) e, com base neles, gerar automaticamente o dataset de treinamento triplets.csv.
+
+### 3. Fine-Tuning e Geração de Embeddings: 
+
+Nesta fase, o modelo Transformer neuralmind/bert-base-portuguese-cased será especializado através de um processo de fine-tuning com a estratégia TripletLoss, aprendendo a mapear o texto das receitas para um espaço vetorial onde a proximidade matemática reflete a similaridade contextual.
+
+### 4. Construção da Infraestrutura de Busca e API: 
+
+Os embeddings gerados seriam indexados em uma base de dados vetorial FAISS. Em paralelo, foi desenvolvida a API principal em FastAPI.
+
+### 5. Implementação do Frontend e da Lógica de Conversação: 
+
+A interface seria desenvolvida com foco na experiência do usuário. Implementar algum fluxo para orquestrar a comunicação entre a busca no FAISS e a geração de texto da OpenAI.
+
+### 6. Automação e DevOps: 
+
+Configurados pipelines em GitHub Actions para CI/CD e workflows no N8N para tarefas recorrentes, como a atualização de preços.
 
 ## Arquitetura da Solução
 A arquitetura foi desenhada para ser modular, escalável e de alta performance, separando claramente as responsabilidades de cada componente. O sistema opera em quatro camadas principais que se comunicam via APIs:
