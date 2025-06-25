@@ -184,9 +184,10 @@ div.csl-indent {
   <li><a href="#análise-de-concorrência" id="toc-análise-de-concorrência" class="nav-link" data-scroll-target="#análise-de-concorrência"><span class="header-section-number">4.4</span> Análise de Concorrência</a>
   <ul class="collapse">
   <li><a href="#metodologia-da-análise" id="toc-metodologia-da-análise" class="nav-link" data-scroll-target="#metodologia-da-análise"><span class="header-section-number">4.4.1</span> Metodologia da Análise</a></li>
-  <li><a href="#aplicativos-analisados" id="toc-aplicativos-analisados" class="nav-link" data-scroll-target="#aplicativos-analisados"><span class="header-section-number">4.4.2</span> Aplicativos Analisados</a></li>
-  <li><a href="#principais-oportunidades-identificadas" id="toc-principais-oportunidades-identificadas" class="nav-link" data-scroll-target="#principais-oportunidades-identificadas"><span class="header-section-number">4.4.3</span> Principais Oportunidades Identificadas</a></li>
-  <li><a href="#posicionamento-estratégico" id="toc-posicionamento-estratégico" class="nav-link" data-scroll-target="#posicionamento-estratégico"><span class="header-section-number">4.4.4</span> Posicionamento Estratégico</a></li>
+  <li><a href="#resumo-dos-aplicativos-analisados" id="toc-resumo-dos-aplicativos-analisados" class="nav-link" data-scroll-target="#resumo-dos-aplicativos-analisados"><span class="header-section-number">4.4.2</span> Resumo dos Aplicativos Analisados</a></li>
+  <li><a href="#outros-aplicativos-analisados" id="toc-outros-aplicativos-analisados" class="nav-link" data-scroll-target="#outros-aplicativos-analisados"><span class="header-section-number">4.4.3</span> Outros aplicativos analisados</a></li>
+  <li><a href="#principais-oportunidades-identificadas" id="toc-principais-oportunidades-identificadas" class="nav-link" data-scroll-target="#principais-oportunidades-identificadas"><span class="header-section-number">4.4.4</span> Principais Oportunidades Identificadas</a></li>
+  <li><a href="#posicionamento-estratégico" id="toc-posicionamento-estratégico" class="nav-link" data-scroll-target="#posicionamento-estratégico"><span class="header-section-number">4.4.5</span> Posicionamento Estratégico</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -287,33 +288,71 @@ Figure&nbsp;4.4: Boxplot da complexidade pelo tamanho do texto de preparo em cad
 </section>
 <section id="análise-de-concorrência" class="level2" data-number="4.4">
 <h2 data-number="4.4" class="anchored" data-anchor-id="análise-de-concorrência"><span class="header-section-number">4.4</span> Análise de Concorrência</h2>
-<p>Para fundamentar o desenvolvimento desta solução, foi conduzida uma análise detalhada dos principais aplicativos de nutrição disponíveis no mercado brasileiro, com foco específico em identificar oportunidades estratégicas para atender pessoas com diabetes e usuários com restrições orçamentárias.</p>
+<p>Para fundamentar o desenvolvimento desta solução, foi conduzida uma análise detalhada dos principais aplicativos de nutrição disponíveis no mercado brasileiro, com foco em identificar oportunidades estratégicas ainda não atendidas.</p>
 <section id="metodologia-da-análise" class="level3" data-number="4.4.1">
 <h3 data-number="4.4.1" class="anchored" data-anchor-id="metodologia-da-análise"><span class="header-section-number">4.4.1</span> Metodologia da Análise</h3>
-<p>A análise foi realizada através da avaliação sistemática de dados de usuários, incluindo comentários e avaliações em lojas de aplicativos, permitindo uma compreensão profunda das demandas não atendidas pelo mercado atual.</p>
+<p>A coleta de dados e informações ocorreu por três fontes principais:</p>
+<ul>
+<li>Curadoria manual de comentários em lojas de aplicativos (Google Play e App Store)</li>
+<li>Descrições oficiais nas próprias lojas</li>
+<li>Conteúdos disponibilizados nos sites dos aplicativos</li>
+</ul>
+<p>Para cada app, foram priorizados na análise dos comentários:</p>
+<ol type="1">
+<li><strong>Relevância e atualidade</strong> – avaliações referentes às versões mais recentes, garantindo que os achados reflitam o estado atual do produto.</li>
+<li><strong>Engajamento</strong> – comentários com maior número de curtidas/ “úteis”, pois sinalizam temas que realmente mobilizam a comunidade de usuários.</li>
+<li><strong>Diversidade de experiências</strong> – seleção equilibrada de opiniões positivas, neutras e negativas, de modo a capturar tanto pontos fortes quanto lacunas percebidas.</li>
+<li><strong>Foco em diabetes</strong> – rastreamos explicitamente menções a contagem de carboidratos, índice glicêmico, integração com glicosímetros e demais recursos críticos para pessoas com diabetes, possível público-alvo do projeto.</li>
+</ol>
+<p>Optou-se por evitar técnicas de scraping em larga escala: embora automatizem e facilitem a coleta, essa coleta automática costuma trazer muito comentário repetido ou desatualizado, o que acabaria poluindo a análise. Ao ler e filtrar manualmente, mesmo que dê mais trabalho, conseguimos focar só no que realmente importa para uma maior parte dos usuários.</p>
 </section>
-<section id="aplicativos-analisados" class="level3" data-number="4.4.2">
-<h3 data-number="4.4.2" class="anchored" data-anchor-id="aplicativos-analisados"><span class="header-section-number">4.4.2</span> Aplicativos Analisados</h3>
-<p><strong>1. Smart Fit Nutri</strong> - <strong>Resumo</strong>: Aplicativo integrado ao ecossistema Smart Fit, focado em avaliação física, bioimpedância e consultas online com nutricionistas - <strong>Diferenciais</strong>: Planos personalizados, acompanhamento profissional e integração com academias - <strong>Limitações para diabéticos</strong>: Não oferece funcionalidades específicas como contagem de carboidratos líquidos, índice glicêmico ou integração com glicosímetros - <strong>Principais lacunas identificadas</strong>: Ausência de lista de compras, substituições nos cardápios, diário alimentar com contagem de macros</p>
-<p><strong>2. Macros – Contador de Calorias</strong> - <strong>Resumo</strong>: Focado em contagem de calorias e macronutrientes, com biblioteca de alimentos personalizável - <strong>Diferenciais</strong>: Cálculo de net carbs, biblioteca colaborativa de alimentos - <strong>Limitações</strong>: Falta de integração com apps de saúde, ausência de modo offline, funcionalidades limitadas para rastreamento de evolução</p>
-<p><strong>3. YAZIO</strong> - <strong>Resumo</strong>: Aplicativo de emagrecimento que combina contador de calorias, jejum intermitente e receitas - <strong>Diferenciais</strong>: Interface moderna, rastreador de jejum, foco motivacional - <strong>Limitações para diabéticos</strong>: Aparentemente sem recursos específicos para diabetes, como índice glicêmico ou monitoramento de glicose</p>
-<p><strong>4. FatSecret</strong> - <strong>Resumo</strong>: Controle alimentar com foco em comunidade e base extensa de alimentos - <strong>Diferenciais</strong>: Versão gratuita robusta, comunidade ativa, integração com Google Fit - <strong>Limitações</strong>: Falta de precisão para diabéticos, ausência de net carbs e índice glicêmico, apenas 4 refeições diárias</p>
+<section id="resumo-dos-aplicativos-analisados" class="level3" data-number="4.4.2">
+<h3 data-number="4.4.2" class="anchored" data-anchor-id="resumo-dos-aplicativos-analisados"><span class="header-section-number">4.4.2</span> Resumo dos Aplicativos Analisados</h3>
+<p><strong>1. Smart Fit Nutri</strong></p>
+<ul>
+<li><p><strong>Resumo</strong>: Aplicativo integrado ao ecossistema Smart Fit, focado em avaliação física, bioimpedância e consultas online com nutricionistas</p></li>
+<li><p><strong>Diferenciais</strong>: Planos personalizados, acompanhamento profissional e integração com academias</p></li>
+<li><p><strong>Limitações para diabéticos</strong>: Não oferece funcionalidades específicas como contagem de carboidratos líquidos, índice glicêmico ou integração com glicosímetros</p></li>
+<li><p><strong>Principais lacunas identificadas</strong>: Ausência de lista de compras, substituições nos cardápios, diário alimentar com contagem de macros</p></li>
+</ul>
+<p><strong>2. Macros – Contador de Calorias</strong></p>
+<ul>
+<li><p><strong>Resumo</strong>: Focado em contagem de calorias e macronutrientes, com biblioteca de alimentos personalizável</p></li>
+<li><p><strong>Diferenciais</strong>: Cálculo de net carbs, biblioteca colaborativa de alimentos</p></li>
+<li><p><strong>Limitações</strong>: Falta de integração com apps de saúde, ausência de modo offline, funcionalidades limitadas para rastreamento de evolução</p></li>
+</ul>
+<p><strong>3. YAZIO</strong></p>
+<ul>
+<li><p><strong>Resumo</strong>: Aplicativo de emagrecimento que combina contador de calorias, jejum intermitente e receitas</p></li>
+<li><p><strong>Diferenciais</strong>: Interface moderna, rastreador de jejum, foco motivacional</p></li>
+<li><p><strong>Limitações para diabéticos</strong>: Sem recursos específicos para diabetes, como índice glicêmico ou monitoramento de glicose</p></li>
+</ul>
+<p><strong>4. FatSecret</strong></p>
+<ul>
+<li><p><strong>Resumo</strong>: Controle alimentar com foco em comunidade e base extensa de alimentos</p></li>
+<li><p><strong>Diferenciais</strong>: Versão gratuita robusta, comunidade ativa, integração com Google Fit</p></li>
+<li><p><strong>Limitações</strong>: Falta de precisão para diabéticos, ausência de net carbs e índice glicêmico, apenas 4 refeições diárias</p></li>
+</ul>
+</section>
+<section id="outros-aplicativos-analisados" class="level3" data-number="4.4.3">
+<h3 data-number="4.4.3" class="anchored" data-anchor-id="outros-aplicativos-analisados"><span class="header-section-number">4.4.3</span> Outros aplicativos analisados</h3>
+<p>Os aplicativos listados abaixo foram instalados e testados para simular a experiência real de uso sob a perspectiva de um usuário final.</p>
 <p><strong>5. MyFitnessPal</strong></p>
 <ul>
-<li><p>Perguntas feitas: peso atual, meta de peso e nível de atividade.</p>
+<li>Perguntas feitas: peso atual, meta de peso e nível de atividade.
 <ul>
 <li>Explicações direcionadas para leigos.</li>
 <li>Se você trabalha sentado, é classificado como “pouco ativo”, mesmo que treine.</li>
 </ul></li>
-<li><p>Sincronizado com o app Health do iPhone.</p></li>
-<li><p>Monitora: macros, nutrientes e calorias; adaptável à dieta.</p></li>
-<li><p>Seção de receitas com macros detalhados e hashtags como gluten free, dairy free, low carb, low sugar, vegetarian, etc.</p></li>
-<li><p>Seção com exercícios para fazer em casa.</p></li>
-<li><p>Sincroniza treinos de outros apps (como relógios e apps de celular).</p></li>
-<li><p>Mapa com tracking de progresso.</p></li>
-<li><p>Possibilidade de criar suas próprias receitas.</p></li>
-<li><p>Permite adicionar amigos no app.</p></li>
-<li><p>Rastreamento de água.</p></li>
+<li>Sincronizado com o app Health do iPhone.</li>
+<li>Monitora: macros, nutrientes e calorias; adaptável à dieta.</li>
+<li>Seção de receitas com macros detalhados e hashtags como gluten free, dairy free, low carb, low sugar, vegetarian, etc.</li>
+<li>Seção com exercícios para fazer em casa.</li>
+<li>Sincroniza treinos de outros apps (como relógios e apps de celular).</li>
+<li>Mapa com tracking de progresso.</li>
+<li>Possibilidade de criar suas próprias receitas.</li>
+<li>Permite adicionar amigos no app.</li>
+<li>Rastreamento de água.</li>
 </ul>
 <p><strong>6. Tecnonutri</strong></p>
 <ul>
@@ -433,14 +472,32 @@ Figure&nbsp;4.4: Boxplot da complexidade pelo tamanho do texto de preparo em cad
 <li><p>Câmera para análise do prato (requer descrição detalhada do conteúdo do prato).</p></li>
 </ul>
 </section>
-<section id="principais-oportunidades-identificadas" class="level3" data-number="4.4.3">
-<h3 data-number="4.4.3" class="anchored" data-anchor-id="principais-oportunidades-identificadas"><span class="header-section-number">4.4.3</span> Principais Oportunidades Identificadas</h3>
-<p><strong>Lacunas Específicas para Diabéticos:</strong> - Ausência de índice glicêmico na maioria dos aplicativos - Falta de integração com monitores de glicose - Ausência de contagem de carboidratos líquidos em vários apps - Controle refinado insuficiente para necessidades metabólicas específicas</p>
-<p><strong>Demandas Econômicas Não Atendidas:</strong> - Nenhum aplicativo oferece comparação de preços de alimentos - Ausência de funcionalidades de otimização de custo vs.&nbsp;valor nutricional - Falta de sugestões de substituições econômicas mantendo valor nutricional - Inexistência de lista de compras otimizada por custo</p>
-<p><strong>Funcionalidades Solicitadas pelos Usuários:</strong> - Suporte a dados da TACO (Tabela Brasileira de Composição de Alimentos) - Criação automática de cardápios baseados em preferências e restrições - Lista de compras integrada com planejamento semanal - Reconhecimento de alimentos por IA - Melhor personalização de refeições e horários</p>
+<section id="principais-oportunidades-identificadas" class="level3" data-number="4.4.4">
+<h3 data-number="4.4.4" class="anchored" data-anchor-id="principais-oportunidades-identificadas"><span class="header-section-number">4.4.4</span> Principais Oportunidades Identificadas</h3>
+<p><strong>Lacunas Específicas para Diabéticos:</strong></p>
+<ul>
+<li><p>Ausência de índice glicêmico na maioria dos aplicativos</p></li>
+<li><p>Falta de integração com monitores de glicose</p></li>
+<li><p>Ausência de contagem de carboidratos líquidos em vários apps</p></li>
+</ul>
+<p><strong>Demandas Econômicas Não Atendidas:</strong></p>
+<ul>
+<li><p>Nenhum aplicativo oferece comparação de preços de alimentos</p></li>
+<li><p>Ausência de funcionalidades de otimização de custo vs.&nbsp;valor nutricional</p></li>
+<li><p>Falta de sugestões de substituições econômicas mantendo valor nutricional</p></li>
+<li><p>Inexistência de lista de compras otimizada por custo</p></li>
+</ul>
+<p><strong>Funcionalidades Solicitadas pelos Usuários:</strong></p>
+<ul>
+<li><p>Suporte a dados da TACO (Tabela Brasileira de Composição de Alimentos)</p></li>
+<li><p>Criação automática de cardápios baseados em preferências e restrições</p></li>
+<li><p>Lista de compras integrada com planejamento semanal</p></li>
+<li><p>Reconhecimento de alimentos por IA</p></li>
+<li><p>Melhor personalização de refeições e horários</p></li>
+</ul>
 </section>
-<section id="posicionamento-estratégico" class="level3" data-number="4.4.4">
-<h3 data-number="4.4.4" class="anchored" data-anchor-id="posicionamento-estratégico"><span class="header-section-number">4.4.4</span> Posicionamento Estratégico</h3>
+<section id="posicionamento-estratégico" class="level3" data-number="4.4.5">
+<h3 data-number="4.4.5" class="anchored" data-anchor-id="posicionamento-estratégico"><span class="header-section-number">4.4.5</span> Posicionamento Estratégico</h3>
 <p>A análise revelou uma oportunidade única de mercado: nenhum dos aplicativos analisados combina adequadamente o atendimento às necessidades específicas de pessoas com diabetes com soluções econômicas para otimização de custos alimentares. Esta lacuna representa o diferencial competitivo central do projeto proposto, posicionando-o como pioneiro na intersecção entre saúde especializada e acessibilidade econômica.</p>
 
 

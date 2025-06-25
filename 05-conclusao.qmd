@@ -9,3 +9,7 @@ Durante o desenvolvimento, algumas dificuldades se destacaram. A coleta e curado
 
 ## Próximos Passos e Sugestões
 Para o avanço do projeto, os próximos passos devem focar na validação com usuários reais, já entramos em contato com a coordenadora do atendimento nutricional do CAC para coletar feedbacks e os dados das consultas realizadas (possivelmente teremos esses dados que até o começo do próximo semestre ) e precisamos refinar a precisão das recomendações. A integração com plataformas de saúde e mercados locais para otimização de compras pode ser um diferencial estratégico. Por fim, a implementação de funcionalidades específicas para o acompanhamento de condições crônicas, como o diabetes, com o monitoramento de glicose e contagem de carboidratos líquidos, consolidaria ainda mais o valor social e a relevância do assistente.
+
+## Link do Repositório no GitHub:
+
+https://github.com/projeto-integrador-cdml/grupos-pi-i-2025-projeto_1_felipe
