@@ -1,8 +1,29 @@
 # Resultados
 
-Apresente resultados do funcionamento do sistema, testes e validações.
+## Análise de princípios do Guia Alimentar para a População Brasileira
 
-## Resultados da Análise de Concorrência
+Durante o processo de leitura e análise foi possível observar uma forte relação entre o objetivo central deste projeto com alguns princípios do Guia. O primeiro princípio retrata a alimentação como algo além da simples ingestão de nutrientes, mas que está atrelada a aspectos culturais e sociais. 
+Nessa esteira, é possível notar sazonalidades na série histórica de buscas pelo termo "alimentação saudável" no Google, indicando que há uma tendência brasileira de desinteresse por nutrição balanceada durante épocas festivas, especialmente entre o Natal e Ano Novo. 
+(ADICIONAR GRÁFICO)
+
+Tal cenário reforça o primeiro princípio do Guia Alimentar para a População Brasileira e explicita a necessidade de adaptar o software que está sendo desenvolvido ao cotidiano dos usuários
+
+## Análise de preços históricos de produtos de Hortifruti divulgados pelo CEPEA
+
+Para uma análise exploratória inicial, foram utilizados dados referentes ao preço por Kg de alimento na capital paulista no período de 2005 a 2025. Os produtos presentes na base são: Banana, batata, cebola, cenoura, folhosas, maçã, mamão, manga, melancia, melão e tomate
+
+Fica clara um tendência de valorização dos preços médios por alimento nas últimas 2 décadas, impulsionada por uma combinação de fatores macroeconômicos, como inflação e custos de produção, e por dinâmicas específicas de oferta e demanda para cada produto. Em relação aos preços médios gerais, em 2005, o preço médio girava em torno de R$ 2,00/kg. Em contraste, em 2025 esse valor atinge a faixa de R$ 6,00 a R$ 7,00/kg, o que representa um aumento percentual significativo, variando entre 200% e 250% em aproximadamente 20 anos.
+(ADICIONAR GRÁFICO)
+
+Dentre os produtos que mais cresceram, a Uva se destaca por sua tendência de aumento constante, passando de aproximadamente R$ 2,00/kg para R$ 12,00/kg, um aumento de 400% a 600%. Apesar do crescimento, não há sazonalidades claras e chamativas na variação de preço.
+(ADICIONAR GRÁFICO)
+
+A sazonalidade é uma característica relevante para o mercado de hortifrutis, ditada pelos ciclos naturais e condições. Produtos como tomate, alface/Folhosas e cenoura exibem padrões sazonais claros, com preços mais baixos durante os períodos de safra e mais altos na entressafra, quando a oferta é reduzida. 
+(ADICIONAR GRÁFICO)
+
+O aprofundamento dessas análises de séries temporais pode contribuir para a recomendação de substituições que tornem a dieta dos usuários mais acessível em determinadas épocas do ano
+
+## Análise de Concorrência
 
 Para fundamentar o desenvolvimento desta solução, foi conduzida uma análise detalhada dos principais aplicativos de nutrição disponíveis no mercado brasileiro, com foco específico em identificar oportunidades estratégicas para atender pessoas com diabetes e usuários com restrições orçamentárias.
 
