@@ -41,6 +41,18 @@ Este repositório serve como um **template** para a documentação do Projeto In
 
 É crucial que todas as diretrizes e requisitos fornecidos pelos professores e pela coordenação do curso, seja via Moodle ou outros canais oficiais, sejam sempre priorizados e seguidos rigorosamente. Este template visa facilitar o processo, mas não substitui as instruções específicas do seu Projeto Integrador.
 
+## 💡 Por Que Usar Quarto para este Projeto?
+
+O Quarto é uma ferramenta poderosa e flexível que integra código, texto e saídas em um único documento, tornando-o ideal para projetos de Ciência de Dados e Machine Learning. Ao utilizar este template, você se beneficia de:
+
+-   **Reproducibilidade:** Garanta que seus resultados sejam facilmente reproduzíveis, pois o código e a análise estão diretamente incorporados à documentação.
+-   **Formatação ABNT Simplificada:** O template já está configurado para atender às normas da ABNT, poupando tempo e esforço na formatação manual.
+-   **Saídas Versáteis:** Gere documentos em diversos formatos (PDF, HTML, Word) a partir de um único arquivo-fonte, facilitando a entrega e a revisão.
+-   **Colaboração Eficiente:** A estrutura modular dos arquivos `.qmd` permite que diferentes membros da equipe trabalhem em seções distintas do relatório de forma organizada.
+
+Dominar o Quarto neste projeto não só simplificará a criação da sua documentação, mas também desenvolverá uma habilidade valiosa para sua carreira em dados.
+
+
 
 ## 📌 Regras
 
