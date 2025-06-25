@@ -35,6 +35,13 @@ quarto render
 
 Será adicionado um arquivo `.github/workflows/render.yml` para gerar o PDF automaticamente a cada commit.
 
+## ✨ Observações Importantes
+
+Este repositório serve como um **template** para a documentação do Projeto Integrador I. É fundamental que os alunos o utilizem como ponto de partida, adaptando e expandindo o conteúdo para refletir as especificidades e o desenvolvimento de seus próprios projetos. Lembrem-se de que a documentação deve ser um reflexo fiel do trabalho realizado, e todas as seções devem ser preenchidas com informações detalhadas e relevantes.
+
+É crucial que todas as diretrizes e requisitos fornecidos pelos professores e pela coordenação do curso, seja via Moodle ou outros canais oficiais, sejam sempre priorizados e seguidos rigorosamente. Este template visa facilitar o processo, mas não substitui as instruções específicas do seu Projeto Integrador.
+
+
 ## 📌 Regras
 
 - Documentação é obrigatória e será avaliada com base na completude e clareza.
@@ -43,48 +50,4 @@ Será adicionado um arquivo `.github/workflows/render.yml` para gerar o PDF auto
 ## 👨‍🏫 Suporte
 
 Em caso de dúvidas, consulte os materiais no Moodle ou entre em contato com o professor responsável.
-
-
-## 🧑‍💻 Boas Práticas de Programação
-
-Para garantir a qualidade e a manutenção do código, é importante seguir algumas boas práticas. Aqui estão algumas diretrizes recomendadas:
-
-### 1. **Nomes Significativos**
-   - Use nomes claros e descritivos para variáveis, funções e métodos. Evite abreviações e nomes genéricos.
-   
-### 2. **Comentários Claros e Concisos**
-   - Comente partes do código que sejam complexas ou pouco intuitivas. Evite comentários redundantes.
-   - Utilize comentários de funções para descrever o que a função faz, seus parâmetros e o retorno.
-
-### 3. **Evitar Código Repetido**
-   - Siga o princípio DRY (Don't Repeat Yourself). Se identificar código repetido, extraia-o para funções ou métodos reutilizáveis.
-
-### 4. **Organização do Código**
-   - Organize o código em módulos e funções para manter a clareza e facilitar a manutenção.
-   - Evite funções ou métodos grandes; prefira dividir a lógica em pequenas funções responsáveis por uma única tarefa.
-
-### 5. **Consistência**
-   - Mantenha um estilo de codificação consistente em todo o projeto (por exemplo, use PEP 8 para Python).
-   - Use a mesma quantidade de espaços para indentação ao longo de todo o código.
-
-### 6. **Tratamento de Erros**
-   - Implemente tratamento de exceções de forma adequada para evitar falhas inesperadas.
-   - As mensagens de erro devem ser claras e informativas.
-
-### 7. **Testes**
-   - Escreva testes unitários para validar a funcionalidade do seu código.
-   - Use ferramentas de integração contínua para rodar os testes automaticamente com cada commit.
-   - Garanta que o código crítico tenha boa cobertura de testes.
-
-### 8. **Controle de Versão**
-   - Utilize o Git para versionamento de código e siga práticas como commits pequenos e frequentes.
-   - Utilize branches para implementar novas funcionalidades ou corrigir bugs sem afetar o código principal.
-
-### 9. **Eficiência**
-   - Escreva código eficiente e escolha estruturas de dados e algoritmos apropriados para melhorar o desempenho.
-   - Utilize técnicas como lazy loading ou caching quando necessário.
-
-### 10. **Documentação**
-   - Documente seu código utilizando ferramentas como Javadoc (para Java) ou Sphinx (para Python).
-   - Mantenha o README sempre atualizado com instruções claras de instalação, uso e contribuição.
 
