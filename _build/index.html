@@ -6,7 +6,13 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Felipe Teodoro Emanuela Araújo João Vitor Lucas Wall Mateo Wall Victor Vanazzi">
+<meta name="author" content="Emanuela Araújo">
+<meta name="author" content="Felipe Teodoro">
+<meta name="author" content="Jamille Rocha">
+<meta name="author" content="João Vitor">
+<meta name="author" content="Lucas Wall">
+<meta name="author" content="Mateo Wall">
+<meta name="author" content="Victor Vanazzi">
 
 <title>Ciência de Dados na Nutrição</title>
 <style>
@@ -176,8 +182,12 @@ div.csl-indent {
   <li><a href="#introdução" id="toc-introdução" class="nav-link active" data-scroll-target="#introdução"><span class="header-section-number">1</span> Introdução</a>
   <ul class="collapse">
   <li><a href="#contexto" id="toc-contexto" class="nav-link" data-scroll-target="#contexto"><span class="header-section-number">1.1</span> Contexto</a></li>
-  <li><a href="#o-problema-a-ser-resolvido" id="toc-o-problema-a-ser-resolvido" class="nav-link" data-scroll-target="#o-problema-a-ser-resolvido"><span class="header-section-number">1.2</span> O Problema a ser Resolvido</a></li>
-  <li><a href="#objetivos-do-projeto" id="toc-objetivos-do-projeto" class="nav-link" data-scroll-target="#objetivos-do-projeto"><span class="header-section-number">1.3</span> Objetivos do Projeto</a></li>
+  <li><a href="#objetivos" id="toc-objetivos" class="nav-link" data-scroll-target="#objetivos"><span class="header-section-number">1.2</span> Objetivos</a>
+  <ul class="collapse">
+  <li><a href="#objetivo-geral" id="toc-objetivo-geral" class="nav-link" data-scroll-target="#objetivo-geral"><span class="header-section-number">1.2.1</span> Objetivo Geral</a></li>
+  <li><a href="#objetivos-específicos" id="toc-objetivos-específicos" class="nav-link" data-scroll-target="#objetivos-específicos"><span class="header-section-number">1.2.2</span> Objetivos Específicos</a></li>
+  <li><a href="#impacto-esperado" id="toc-impacto-esperado" class="nav-link" data-scroll-target="#impacto-esperado"><span class="header-section-number">1.2.3</span> Impacto Esperado</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -195,9 +205,15 @@ div.csl-indent {
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Authors</div>
     <div class="quarto-title-meta-contents">
-             <p>Felipe Teodoro Emanuela Araújo João Vitor Lucas Wall Mateo Wall Victor Vanazzi </p>
+             <p>Emanuela Araújo </p>
+             <p>Felipe Teodoro </p>
+             <p>Jamille Rocha </p>
+             <p>João Vitor </p>
+             <p>Lucas Wall </p>
+             <p>Mateo Wall </p>
+             <p>Victor Vanazzi </p>
           </div>
   </div>
     
@@ -214,24 +230,80 @@ div.csl-indent {
 <h1 data-number="1"><span class="header-section-number">1</span> Introdução</h1>
 <section id="contexto" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="contexto"><span class="header-section-number">1.1</span> Contexto</h2>
-<p>O Brasil enfrenta um cenário nutricional complexo e paradoxal, caracterizado pela dupla carga da má nutrição. Por um lado, persistem desafios relacionados à desnutrição e deficiências de micronutrientes em grupos vulneráveis. Por outro, dados de inquéritos nacionais como a Pesquisa Nacional de Saúde (PNS) e a Pesquisa de Orçamentos Familiares (POF) revelam um avanço alarmante do sobrepeso e da obesidade em todas as faixas etárias e classes sociais, consolidando uma epidemia de doenças crônicas não transmissíveis (DCNT). Este panorama contrasta diretamente com as diretrizes do Guia Alimentar para a População Brasileira, um documento de referência mundial que preconiza uma alimentação baseada em alimentos in natura e minimamente processados. A realidade, no entanto, é marcada por um consumo crescente de alimentos ultraprocessados, impulsionado por fatores como praticidade, baixo custo aparente e marketing agressivo, criando um abismo entre a recomendação e a prática diária da população.</p>
+<p>A alimentação equilibrada representa um dos pilares fundamentais para a manutenção da saúde e qualidade de vida, sendo ainda mais crítica para pessoas com condições específicas como diabetes. No entanto, o acesso a uma dieta personalizada e nutricionalmente adequada enfrenta barreiras significativas no Brasil, principalmente relacionadas ao custo dos alimentos e à falta de orientação especializada acessível.</p>
+<p>Sabe-se que, em 2018, famílias com renda de até dois salários mínimos destinaram 22% de seus gastos à alimentação (mais que o dobro em comparação com famílias de alta renda) . Essa realidade econômica representa uma restrição fundamental para projetos de nutrição, uma vez que a viabilidade financeira é um fator determinante para a adesão e continuidade de práticas alimentares saudáveis.</p>
+<p>Além disso, de acordo com os dados do Google Trends, houve um aumento de 400% no nível de interesse pelo termo “restaurante comunitário” no Distrito Federal entre dezembro de 2020 e dezembro de 2024. Apesar de o programa ter sido oficializado em 2008 (Lei Nº 4.208), o aumento recente da quantidade de buscas pelo termo reforça a ideia de que questões atreladas à acessibilidade orçamentária são cada vez mais relevantes quando o assunto é alimentação. É importante ressaltar que, para esta análise, os números não representam os valores absolutos do volume de pesquisa, pois os dados são normalizados e apresentados em uma escala de 0 a 100. (ADICIONAR GRÁFICO)</p>
+<p>Simultaneamente, o número de pessoas diagnosticadas com diabetes no país tem crescido consistentemente, atingindo mais de 16 milhões de brasileiros segundo a Sociedade Brasileira de Diabetes. Esta população necessita de acompanhamento nutricional especializado e dietas com restrições específicas, que frequentemente apresentam custos mais elevados devido à necessidade de alimentos especializados.</p>
+<p>A intersecção entre essas duas realidades - a necessidade de dietas personalizadas e as limitações orçamentárias - revela uma lacuna significativa no mercado atual. Embora existam aplicativos de monitoramento nutricional e plataformas de dietas, poucos oferecem soluções que integrem efetivamente o aspecto econômico com as necessidades nutricionais específicas, especialmente para condições como diabetes.</p>
+<p>Neste cenário, a tecnologia emerge como uma ferramenta poderosa para democratizar o acesso à orientação nutricional de qualidade. Através da utilização de bases de dados consolidadas, como a Tabela Brasileira de Composição de Alimentos (TACO), combinada com informações de preços regionais e algoritmos de inteligência artificial, torna-se possível desenvolver soluções que atendam simultaneamente aos critérios nutricionais e econômicos dos usuários.</p>
 </section>
-<section id="o-problema-a-ser-resolvido" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="o-problema-a-ser-resolvido"><span class="header-section-number">1.2</span> O Problema a ser Resolvido</h2>
-<p>A principal barreira para uma alimentação saudável no Brasil, especialmente para a população de baixa renda, não é meramente a falta de informação, mas sim a viabilidade e a percepção. Para uma vasta parcela da sociedade, o termo “dieta” é carregado de conotações negativas, sendo associado a punição, restrição, alto custo e pratos sem sabor. O problema se intensifica em “momentos-gatilho” — como o cansaço ao final de um longo dia de trabalho, o estresse financeiro no fim do mês ou a necessidade de uma recompensa imediata na sexta à noite. Nesses momentos, a escolha por fast food, delivery ou ultraprocessados torna-se o caminho de menor resistência, não por falta de desejo por uma vida mais saudável, mas pela ausência de alternativas que sejam percebidas como igualmente práticas, acessíveis, prazerosas e culturalmente relevantes. O desafio central, portanto, é quebrar o ciclo em que “comer bem” é visto como um privilégio e “comer o que é fácil” é a única opção realista.</p>
+<section id="objetivos" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="objetivos"><span class="header-section-number">1.2</span> Objetivos</h2>
+<section id="objetivo-geral" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="objetivo-geral"><span class="header-section-number">1.2.1</span> Objetivo Geral</h3>
+<p>Desenvolver uma plataforma digital inteligente que auxilie usuários a criar e manter dietas personalizadas, equilibrando aspectos nutricionais e econômicos, com foco especial em pessoas com diabetes e restrições orçamentárias.</p>
 </section>
-<section id="objetivos-do-projeto" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="objetivos-do-projeto"><span class="header-section-number">1.3</span> Objetivos do Projeto</h2>
-<p>Diante deste complexo problema, o objetivo geral deste projeto é desenvolver uma solução de Inteligência Artificial que atue como um “assistente nutricional” prático, empático e acessível, com foco na população de baixa renda. A meta não é prescrever dietas restritivas, mas sim empoderar os usuários a fazerem pequenas e sustentáveis melhorias em sua alimentação diária. Para alcançar este objetivo macro, o projeto se baseia nos seguintes pilares:</p>
-<ol type="1">
-<li><p>Desmistificar a Alimentação Saudável: Utilizar a IA para reformular a narrativa em torno da “dieta”, focando no prazer, na abundância e na valorização da culinária brasileira (como o arroz com feijão). O sistema deve comunicar benefícios de forma positiva e tangível, evitando linguagem punitiva ou excessivamente técnica.</p></li>
-<li><p>Oferecer “Trocas Inteligentes” Contextuais: Criar um modelo de busca por similaridade que vá além dos nutrientes. O sistema deverá compreender a intenção e o contexto do usuário (ex: “quero um lanche rápido e gostoso”) e sugerir alternativas que sejam não apenas mais saudáveis, mas também realistas em termos de custo, tempo de preparo e disponibilidade de ingredientes.</p></li>
-<li><p>Integrar Custo e Acessibilidade como Fatores Centrais: Tornar os dados de preços de alimentos em tempo real um componente fundamental do sistema de recomendação. O objetivo é garantir que as sugestões sejam financeiramente viáveis e ajudem o usuário a otimizar seu orçamento.</p></li>
-<li><p>Criar uma Experiência Empática e Orientada à Ação: Desenvolver uma interface (UI/UX) e uma linguagem que sejam acolhedoras, especialmente nos “momentos-gatilho”. A solução deve ser proativa, oferecendo ajuda e alternativas fáceis exatamente quando o usuário mais precisa, transformando o que seria um momento de escolha automática e prejudicial em uma oportunidade de decisão consciente e positiva.</p></li>
-</ol>
+<section id="objetivos-específicos" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="objetivos-específicos"><span class="header-section-number">1.2.2</span> Objetivos Específicos</h3>
+<section id="democratização-do-acesso-à-orientação-nutricional" class="level4" data-number="1.2.2.1">
+<h4 data-number="1.2.2.1" class="anchored" data-anchor-id="democratização-do-acesso-à-orientação-nutricional"><span class="header-section-number">1.2.2.1</span> Democratização do Acesso à Orientação Nutricional</h4>
+<ul>
+<li>Tornar as dietas nutricionalmente adequadas mais acessíveis financeiramente para a população brasileira</li>
+<li>Reduzir as barreiras econômicas que impedem o acesso a uma alimentação equilibrada</li>
+<li>Disponibilizar informações nutricionais confiáveis baseadas em dados científicos da TACO</li>
+</ul>
+</section>
+<section id="atendimento-especializado-para-diabéticos" class="level4" data-number="1.2.2.2">
+<h4 data-number="1.2.2.2" class="anchored" data-anchor-id="atendimento-especializado-para-diabéticos"><span class="header-section-number">1.2.2.2</span> Atendimento Especializado para Diabéticos</h4>
+<ul>
+<li>Implementar algoritmos específicos para cálculo de dietas adequadas a pessoas com diabetes</li>
+<li>Criar sistemas de restrição alimentar que considerem o índice glicêmico e outros fatores relevantes</li>
+<li>Fornecer sugestões alimentares que atendam às necessidades metabólicas específicas desta população</li>
+</ul>
+</section>
+<section id="otimização-econômica-das-escolhas-alimentares" class="level4" data-number="1.2.2.3">
+<h4 data-number="1.2.2.3" class="anchored" data-anchor-id="otimização-econômica-das-escolhas-alimentares"><span class="header-section-number">1.2.2.3</span> Otimização Econômica das Escolhas Alimentares</h4>
+<ul>
+<li>Desenvolver funcionalidades de comparação de preços médios por região</li>
+<li>Implementar sistema de sugestões de substituições alimentares que mantenham o valor nutricional com menor custo</li>
+<li>Criar algoritmos de otimização que equilibrem qualidade nutricional e custo-benefício</li>
+</ul>
+</section>
+<section id="personalização-e-contextualização" class="level4" data-number="1.2.2.4">
+<h4 data-number="1.2.2.4" class="anchored" data-anchor-id="personalização-e-contextualização"><span class="header-section-number">1.2.2.4</span> Personalização e Contextualização</h4>
+<ul>
+<li>Estabelecer sistema de restrições por refeição (café da manhã, almoço, jantar, lanches)</li>
+<li>Implementar personalização baseada em preferências individuais e restrições alimentares</li>
+<li>Desenvolver sistema de tags e categorização para melhor organização dos alimentos</li>
+</ul>
+</section>
+<section id="engajamento-e-acompanhamento" class="level4" data-number="1.2.2.5">
+<h4 data-number="1.2.2.5" class="anchored" data-anchor-id="engajamento-e-acompanhamento"><span class="header-section-number">1.2.2.5</span> Engajamento e Acompanhamento</h4>
+<ul>
+<li>Criar funcionalidades de gamificação através de rankings e competições de adesão à dieta</li>
+<li>Implementar sistema de acompanhamento de progresso e metas nutricionais</li>
+<li>Desenvolver ferramentas que promovam a continuidade e motivação dos usuários</li>
+</ul>
+</section>
+<section id="suporte-profissional" class="level4" data-number="1.2.2.6">
+<h4 data-number="1.2.2.6" class="anchored" data-anchor-id="suporte-profissional"><span class="header-section-number">1.2.2.6</span> Suporte Profissional</h4>
+<ul>
+<li>Fornecer ferramentas para nutricionistas criarem e disponibilizarem dietas personalizadas</li>
+<li>Facilitar o acompanhamento profissional remoto através da plataforma</li>
+<li>Criar interface adequada para profissionais de saúde monitorarem seus pacientes</li>
+</ul>
+</section>
+</section>
+<section id="impacto-esperado" class="level3" data-number="1.2.3">
+<h3 data-number="1.2.3" class="anchored" data-anchor-id="impacto-esperado"><span class="header-section-number">1.2.3</span> Impacto Esperado</h3>
+<p>Este projeto visa impactar positivamente três dimensões fundamentais da saúde pública brasileira: acessibilidade econômica à alimentação adequada, melhoria da qualidade de vida de pessoas com diabetes, e democratização do acesso à orientação nutricional especializada. Através da integração de tecnologias de inteligência artificial, bases de dados confiáveis e interfaces intuitivas, espera-se contribuir significativamente para a redução das desigualdades no acesso a uma alimentação saudável e personalizada.</p>
+<p>A solução proposta representa um passo importante na direção de um futuro onde a tecnologia serve como ponte entre conhecimento científico e aplicação prática, tornando a saúde preventiva mais acessível e eficaz para toda a população.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-ibge_pof_2017_2018" class="csl-entry" role="listitem">
+IBGE - Instituto Brasileiro de Geografia e Estatística. 2019. <span>“POF 2017-2018: Famílias Com Até r$ 1,9 Mil Destinam 61,2% de Seus Gastos a Alimentação e Habitação.”</span> Agência de Notícias IBGE. <a href="https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/25598-pof-2017-2018-familias-com-ate-r-1-9-mil-destinam-61-2-de-seus-gastos-a-alimentacao-e-habitacao">https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/25598-pof-2017-2018-familias-com-ate-r-1-9-mil-destinam-61-2-de-seus-gastos-a-alimentacao-e-habitacao</a>.
+</div>
 <div id="ref-whats_cooking_kaggle" class="csl-entry" role="listitem">
 Kaggle. 2015. <span>“What’s Cooking: Recipe Ingredients Dataset.”</span> Kaggle competition dataset. <a href="https://www.kaggle.com/competitions/whats-cooking">https://www.kaggle.com/competitions/whats-cooking</a>.
 </div>
@@ -241,7 +313,11 @@ Ministério da Saúde. 2014. <em>Guia Alimentar Para a População Brasileira</e
 <div id="ref-tabela_taco" class="csl-entry" role="listitem">
 NEPA - Núcleo de Estudos e Pesquisas em Alimentação, UNICAMP. 2011. <span>“Tabela Brasileira de Composição de Alimentos (TACO).”</span> <a href="http://www.nepa.unicamp.br/taco/taco_arquivos/Tabela_TACO_4_edicao_ampliada_e_revisada.pdf">http://www.nepa.unicamp.br/taco/taco_arquivos/Tabela_TACO_4_edicao_ampliada_e_revisada.pdf</a>.
 </div>
+<div id="ref-global_health_risks" class="csl-entry" role="listitem">
+World Health Organization. 2009. <em>GLOBAL HEALTH RISKS - Mortality and Burden of Disease Attributable to Selected Major Risks</em>. Geneva: World Health Organization. <a href="https://iris.who.int/bitstream/handle/10665/44203/9789241563871_eng.pdf?sequence=1">https://iris.who.int/bitstream/handle/10665/44203/9789241563871_eng.pdf?sequence=1</a>.
 </div>
+</div>
+</section>
 </section>
 </section>
 

@@ -1,28 +1,60 @@
 # Introdução
 
 ## Contexto
-O Brasil enfrenta um cenário nutricional complexo e paradoxal, caracterizado pela dupla carga da má nutrição. 
-Por um lado, persistem desafios relacionados à desnutrição e deficiências de micronutrientes em grupos vulneráveis.
-Por outro, dados de inquéritos nacionais como a Pesquisa Nacional de Saúde (PNS) e a Pesquisa de Orçamentos Familiares (POF) revelam um avanço alarmante do sobrepeso e da obesidade em todas as faixas etárias e classes sociais, consolidando uma epidemia de doenças crônicas não transmissíveis (DCNT).
-Este panorama contrasta diretamente com as diretrizes do Guia Alimentar para a População Brasileira, um documento de referência mundial que preconiza uma alimentação baseada em alimentos in natura e minimamente processados.
- A realidade, no entanto, é marcada por um consumo crescente de alimentos ultraprocessados, impulsionado por fatores como praticidade, baixo custo aparente e marketing agressivo, criando um abismo entre a recomendação e a prática diária da população.
 
-## O Problema a ser Resolvido
-A principal barreira para uma alimentação saudável no Brasil, especialmente para a população de baixa renda, não é meramente a falta de informação, mas sim a viabilidade e a percepção.
-Para uma vasta parcela da sociedade, o termo "dieta" é carregado de conotações negativas, sendo associado a punição, restrição, alto custo e pratos sem sabor.
-O problema se intensifica em "momentos-gatilho" — como o cansaço ao final de um longo dia de trabalho, o estresse financeiro no fim do mês ou a necessidade de uma recompensa imediata na sexta à noite.
-Nesses momentos, a escolha por fast food, delivery ou ultraprocessados torna-se o caminho de menor resistência, não por falta de desejo por uma vida mais saudável, mas pela ausência de alternativas que sejam percebidas como igualmente práticas, acessíveis, prazerosas e culturalmente relevantes.
-O desafio central, portanto, é quebrar o ciclo em que "comer bem" é visto como um privilégio e "comer o que é fácil" é a única opção realista.
+A alimentação equilibrada representa um dos pilares fundamentais para a manutenção da saúde e qualidade de vida, sendo ainda mais crítica para pessoas com condições específicas como diabetes. No entanto, o acesso a uma dieta personalizada e nutricionalmente adequada enfrenta barreiras significativas no Brasil, principalmente relacionadas ao custo dos alimentos e à falta de orientação especializada acessível.
 
-## Objetivos do Projeto
-Diante deste complexo problema, o objetivo geral deste projeto é desenvolver uma solução de Inteligência Artificial que atue como um "assistente nutricional" prático, empático e acessível, com foco na população de baixa renda.
-A meta não é prescrever dietas restritivas, mas sim empoderar os usuários a fazerem pequenas e sustentáveis melhorias em sua alimentação diária.
-Para alcançar este objetivo macro, o projeto se baseia nos seguintes pilares:
+Sabe-se que, em 2018, famílias com renda de até dois salários mínimos destinaram 22% de seus gastos à alimentação (mais que o dobro em comparação com famílias de alta renda) . Essa realidade econômica representa uma restrição fundamental para projetos de nutrição, uma vez que a viabilidade financeira é um fator determinante para a adesão e continuidade de práticas alimentares saudáveis.
 
-1. Desmistificar a Alimentação Saudável: Utilizar a IA para reformular a narrativa em torno da "dieta", focando no prazer, na abundância e na valorização da culinária brasileira (como o arroz com feijão). O sistema deve comunicar benefícios de forma positiva e tangível, evitando linguagem punitiva ou excessivamente técnica.
+Além disso, de acordo com os dados do Google Trends, houve um aumento de 400% no nível de interesse pelo termo “restaurante comunitário” no Distrito Federal entre dezembro de 2020 e dezembro de 2024. Apesar de o programa ter sido oficializado em 2008 (Lei Nº 4.208), o aumento recente da quantidade de buscas pelo termo reforça a ideia de que questões atreladas à acessibilidade orçamentária são cada vez mais relevantes quando o assunto é alimentação. É importante ressaltar que, para esta análise, os números não representam os valores absolutos do volume de pesquisa, pois os dados são normalizados e apresentados em uma escala de 0 a 100.
+(ADICIONAR GRÁFICO)
 
-2. Oferecer "Trocas Inteligentes" Contextuais: Criar um modelo de busca por similaridade que vá além dos nutrientes. O sistema deverá compreender a intenção e o contexto do usuário (ex: "quero um lanche rápido e gostoso") e sugerir alternativas que sejam não apenas mais saudáveis, mas também realistas em termos de custo, tempo de preparo e disponibilidade de ingredientes.
+Simultaneamente, o número de pessoas diagnosticadas com diabetes no país tem crescido consistentemente, atingindo mais de 16 milhões de brasileiros segundo a Sociedade Brasileira de Diabetes. Esta população necessita de acompanhamento nutricional especializado e dietas com restrições específicas, que frequentemente apresentam custos mais elevados devido à necessidade de alimentos especializados.
 
-3. Integrar Custo e Acessibilidade como Fatores Centrais: Tornar os dados de preços de alimentos em tempo real um componente fundamental do sistema de recomendação. O objetivo é garantir que as sugestões sejam financeiramente viáveis e ajudem o usuário a otimizar seu orçamento.
+A intersecção entre essas duas realidades - a necessidade de dietas personalizadas e as limitações orçamentárias - revela uma lacuna significativa no mercado atual. Embora existam aplicativos de monitoramento nutricional e plataformas de dietas, poucos oferecem soluções que integrem efetivamente o aspecto econômico com as necessidades nutricionais específicas, especialmente para condições como diabetes.
 
-4. Criar uma Experiência Empática e Orientada à Ação: Desenvolver uma interface (UI/UX) e uma linguagem que sejam acolhedoras, especialmente nos "momentos-gatilho". A solução deve ser proativa, oferecendo ajuda e alternativas fáceis exatamente quando o usuário mais precisa, transformando o que seria um momento de escolha automática e prejudicial em uma oportunidade de decisão consciente e positiva.
+Neste cenário, a tecnologia emerge como uma ferramenta poderosa para democratizar o acesso à orientação nutricional de qualidade. Através da utilização de bases de dados consolidadas, como a Tabela Brasileira de Composição de Alimentos (TACO), combinada com informações de preços regionais e algoritmos de inteligência artificial, torna-se possível desenvolver soluções que atendam simultaneamente aos critérios nutricionais e econômicos dos usuários.
+
+## Objetivos
+
+### Objetivo Geral
+
+Desenvolver uma plataforma digital inteligente que auxilie usuários a criar e manter dietas personalizadas, equilibrando aspectos nutricionais e econômicos, com foco especial em pessoas com diabetes e restrições orçamentárias.
+
+### Objetivos Específicos
+
+#### Democratização do Acesso à Orientação Nutricional
+- Tornar as dietas nutricionalmente adequadas mais acessíveis financeiramente para a população brasileira
+- Reduzir as barreiras econômicas que impedem o acesso a uma alimentação equilibrada
+- Disponibilizar informações nutricionais confiáveis baseadas em dados científicos da TACO
+
+#### Atendimento Especializado para Diabéticos
+- Implementar algoritmos específicos para cálculo de dietas adequadas a pessoas com diabetes
+- Criar sistemas de restrição alimentar que considerem o índice glicêmico e outros fatores relevantes
+- Fornecer sugestões alimentares que atendam às necessidades metabólicas específicas desta população
+
+#### Otimização Econômica das Escolhas Alimentares
+- Desenvolver funcionalidades de comparação de preços médios por região
+- Implementar sistema de sugestões de substituições alimentares que mantenham o valor nutricional com menor custo
+- Criar algoritmos de otimização que equilibrem qualidade nutricional e custo-benefício
+
+#### Personalização e Contextualização
+- Estabelecer sistema de restrições por refeição (café da manhã, almoço, jantar, lanches)
+- Implementar personalização baseada em preferências individuais e restrições alimentares
+- Desenvolver sistema de tags e categorização para melhor organização dos alimentos
+
+#### Engajamento e Acompanhamento
+- Criar funcionalidades de gamificação através de rankings e competições de adesão à dieta
+- Implementar sistema de acompanhamento de progresso e metas nutricionais
+- Desenvolver ferramentas que promovam a continuidade e motivação dos usuários
+
+#### Suporte Profissional
+- Fornecer ferramentas para nutricionistas criarem e disponibilizarem dietas personalizadas
+- Facilitar o acompanhamento profissional remoto através da plataforma
+- Criar interface adequada para profissionais de saúde monitorarem seus pacientes
+
+### Impacto Esperado
+
+Este projeto visa impactar positivamente três dimensões fundamentais da saúde pública brasileira: acessibilidade econômica à alimentação adequada, melhoria da qualidade de vida de pessoas com diabetes, e democratização do acesso à orientação nutricional especializada. Através da integração de tecnologias de inteligência artificial, bases de dados confiáveis e interfaces intuitivas, espera-se contribuir significativamente para a redução das desigualdades no acesso a uma alimentação saudável e personalizada.
+
+A solução proposta representa um passo importante na direção de um futuro onde a tecnologia serve como ponte entre conhecimento científico e aplicação prática, tornando a saúde preventiva mais acessível e eficaz para toda a população.

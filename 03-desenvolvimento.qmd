@@ -4,7 +4,7 @@ O processo de desenvolvimento do projeto foi estruturado em fases sequenciais e 
 
 ## Etapa inicial
 
-### 1. Fundamentação e Coleta de Dados: 
+### Fundamentação e Coleta de Dados: 
 
 A coleta de dados e as análises iniciais foram divididas em 3 etapas:
 
@@ -25,23 +25,23 @@ A partir dessa informação, a coleta e análise exploratória dos dados de hort
 
 ## Próximos passos:
 
-### 2. Engenharia de Features e Geração dos Triplets: 
+### Engenharia de Features e Geração dos Triplets: 
 
 Utilizando o dataset bruto, implementar o script do "Funil Inteligente" em Python com Pandas para gerar scores heurísticos (saudabilidade, complexidade, custo) e, com base neles, gerar automaticamente o dataset de treinamento triplets.csv.
 
-### 3. Fine-Tuning e Geração de Embeddings: 
+### Fine-Tuning e Geração de Embeddings: 
 
 Nesta fase, o modelo Transformer neuralmind/bert-base-portuguese-cased será especializado através de um processo de fine-tuning com a estratégia TripletLoss, aprendendo a mapear o texto das receitas para um espaço vetorial onde a proximidade matemática reflete a similaridade contextual.
 
-### 4. Construção da Infraestrutura de Busca e API: 
+### Construção da Infraestrutura de Busca e API: 
 
 Os embeddings gerados seriam indexados em uma base de dados vetorial FAISS. Em paralelo, foi desenvolvida a API principal em FastAPI.
 
-### 5. Implementação do Frontend e da Lógica de Conversação: 
+### Implementação do Frontend e da Lógica de Conversação: 
 
 A interface seria desenvolvida com foco na experiência do usuário. Implementar algum fluxo para orquestrar a comunicação entre a busca no FAISS e a geração de texto da OpenAI.
 
-### 6. Automação e DevOps: 
+### Automação e DevOps: 
 
 Configurados pipelines em GitHub Actions para CI/CD e workflows no N8N para tarefas recorrentes, como a atualização de preços.
 

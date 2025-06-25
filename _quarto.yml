@@ -6,12 +6,14 @@ project:
 
 book:
   title: "Ciência de Dados na Nutrição"
-  author: "Felipe Teodoro\n
-    Emanuela Araújo\n
-    João Vitor\n
-    Lucas Wall\n
-    Mateo Wall\n
-    Victor Vanazzi"
+  author: 
+    - name: Emanuela Araújo
+    - name: Felipe Teodoro
+    - name: Jamille Rocha
+    - name: João Vitor
+    - name: Lucas Wall
+    - name: Mateo Wall
+    - name: Victor Vanazzi
   chapters:
     - index.qmd
     - 02-metodologia.qmd
@@ -25,13 +27,12 @@ format:
   pdf:
     toc: true # Adiciona um sumário
     documentclass: report
-    include-after-body: contracapa.tex # Inclui sua contracapa
+    include-after-body: contracapa.tex 
   html:
     theme: cosmo
     toc: true
 
 # Aponta para o arquivo de bibliografia
 bibliography: refs.bib
-
 nocite:
   - '@*' # Inclui todas as referências da bibliografia, mesmo que não sejam citadas no texto

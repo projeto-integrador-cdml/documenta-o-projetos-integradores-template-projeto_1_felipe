@@ -199,11 +199,11 @@ div.csl-indent {
 </header>
 
 
-<p>Para garantir a agilidade, a adaptabilidade e o foco no impacto social, o desenvolvimento deste projeto será norteado por uma metodologia híbrida, combinando princípios do Scrum (Breves reuniões par alinhamento de tarefas), para gestão de tarefas e entregas iterativas, com o CRISP-DM, para guiar as etapas do ciclo de vida da ciência de dados. Essa abordagem nos permite construir e validar hipóteses rapidamente em sprints de uma ou duas semanas, enquanto mantemos uma estrutura robusta para a exploração de dados e modelagem.</p>
+<p>Para garantir a agilidade, a adaptabilidade e o foco no impacto social, o desenvolvimento deste projeto será norteado por uma metodologia híbrida, combinando CRISP-DM- para guiar as etapas do ciclo de vida da ciência de dados- e princípios do Scrum -realização de reuniões periódicas de alinhamento, criação de um Backlog do produto e priorização do Backlog da Sprint- visando fazer entregas iterativas e incrementais. Essa abordagem permite construir e validar hipóteses rapidamente em sprints de uma ou duas semanas, enquanto uma estrutura robusta para a exploração de dados e modelagem é mantida</p>
 <p>O fluxo de desenvolvimento é dividido nas seguintes etapas macro:</p>
 <ul>
-<li><p>Coleta e Preparação de Dados: A base do nosso sistema. Esta etapa envolve o web scraping massivo de fontes de dados brasileiras (portais de receitas, blogs de culinária popular) para construir um dataset rico. Em paralelo, utilizaremos a estratégia do “Funil Inteligente”: um conjunto de scripts em Python com heurísticas para etiquetar automaticamente cada receita com features de contexto, como score_de_saudabilidade, score_de_complexidade, score_de_custo e tags_contextuais.</p></li>
-<li><p>Modelagem e Treinamento da IA: O núcleo do projeto. Utilizando o dataset de trios (âncora, positivo, negativo) gerado na etapa anterior, faremos o fine-tuning de um modelo Transformer (BERT). O objetivo é especializar o modelo para entender o contexto nutricional, financeiro e emocional do nosso público-alvo, gerando embeddings (vetores) contextuais para cada receita.</p></li>
+<li><p>Coleta e Preparação de Dados: Esta etapa envolve o web scraping massivo de fontes de dados brasileiras (portais de receitas, blogs de culinária popular) para construir um dataset rico. Em paralelo, será utilizada a estratégia do “Funil Inteligente”, que é um conjunto de scripts em Python com heurísticas para etiquetar automaticamente cada receita com features de contexto, como score_de_saudabilidade, score_de_complexidade, score_de_custo e tags_contextuais.</p></li>
+<li><p>Modelagem e Treinamento da IA: O núcleo do projeto. Utilizando o dataset de trios (âncora, positivo, negativo) gerado na etapa anterior, será realizado o fine-tuning de um modelo Transformer (BERT). O objetivo é especializar o modelo para entender o contexto nutricional, financeiro e emocional do público-alvo, gerando embeddings (vetores) contextuais para cada receita.</p></li>
 <li><p>Desenvolvimento do Backend e API: Construção de uma API robusta em FastAPI que servirá como o cérebro do sistema, expondo endpoints para as funcionalidades principais, incluindo a busca por similaridade contextual e a lógica de recomendação.</p></li>
 <li><p>Desenvolvimento do Frontend: Criação da interface do usuário, com foco em uma experiência (UX) empática, acessível e orientada à ação. A interface será projetada para simplificar a jornada do usuário, especialmente em “momentos-gatilho”, como o “Modo Sextou”.</p></li>
 <li><p>Automação e Orquestração: Implementação de pipelines automatizados para tarefas recorrentes, como a atualização de dados de preços ou a re-execução do funil de geração de triplets.</p></li>
@@ -220,6 +220,9 @@ div.csl-indent {
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-ibge_pof_2017_2018" class="csl-entry" role="listitem">
+IBGE - Instituto Brasileiro de Geografia e Estatística. 2019. <span>“POF 2017-2018: Famílias Com Até r$ 1,9 Mil Destinam 61,2% de Seus Gastos a Alimentação e Habitação.”</span> Agência de Notícias IBGE. <a href="https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/25598-pof-2017-2018-familias-com-ate-r-1-9-mil-destinam-61-2-de-seus-gastos-a-alimentacao-e-habitacao">https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/25598-pof-2017-2018-familias-com-ate-r-1-9-mil-destinam-61-2-de-seus-gastos-a-alimentacao-e-habitacao</a>.
+</div>
 <div id="ref-whats_cooking_kaggle" class="csl-entry" role="listitem">
 Kaggle. 2015. <span>“What’s Cooking: Recipe Ingredients Dataset.”</span> Kaggle competition dataset. <a href="https://www.kaggle.com/competitions/whats-cooking">https://www.kaggle.com/competitions/whats-cooking</a>.
 </div>
@@ -228,6 +231,9 @@ Ministério da Saúde. 2014. <em>Guia Alimentar Para a População Brasileira</e
 </div>
 <div id="ref-tabela_taco" class="csl-entry" role="listitem">
 NEPA - Núcleo de Estudos e Pesquisas em Alimentação, UNICAMP. 2011. <span>“Tabela Brasileira de Composição de Alimentos (TACO).”</span> <a href="http://www.nepa.unicamp.br/taco/taco_arquivos/Tabela_TACO_4_edicao_ampliada_e_revisada.pdf">http://www.nepa.unicamp.br/taco/taco_arquivos/Tabela_TACO_4_edicao_ampliada_e_revisada.pdf</a>.
+</div>
+<div id="ref-global_health_risks" class="csl-entry" role="listitem">
+World Health Organization. 2009. <em>GLOBAL HEALTH RISKS - Mortality and Burden of Disease Attributable to Selected Major Risks</em>. Geneva: World Health Organization. <a href="https://iris.who.int/bitstream/handle/10665/44203/9789241563871_eng.pdf?sequence=1">https://iris.who.int/bitstream/handle/10665/44203/9789241563871_eng.pdf?sequence=1</a>.
 </div>
 </div>
 </section>

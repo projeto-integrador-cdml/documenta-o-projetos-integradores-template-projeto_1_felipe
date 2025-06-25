@@ -173,8 +173,20 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#arquitetura-da-solução" id="toc-arquitetura-da-solução" class="nav-link active" data-scroll-target="#arquitetura-da-solução"><span class="header-section-number">3.1</span> Arquitetura da Solução</a></li>
-  <li><a href="#fluxo-de-uma-requisição-exemplo-despensa-virtual" id="toc-fluxo-de-uma-requisição-exemplo-despensa-virtual" class="nav-link" data-scroll-target="#fluxo-de-uma-requisição-exemplo-despensa-virtual"><span class="header-section-number">3.2</span> Fluxo de uma Requisição (Exemplo: “Despensa Virtual”):</a></li>
+  <li><a href="#etapa-inicial" id="toc-etapa-inicial" class="nav-link active" data-scroll-target="#etapa-inicial"><span class="header-section-number">3.1</span> Etapa inicial</a>
+  <ul class="collapse">
+  <li><a href="#fundamentação-e-coleta-de-dados" id="toc-fundamentação-e-coleta-de-dados" class="nav-link" data-scroll-target="#fundamentação-e-coleta-de-dados"><span class="header-section-number">3.1.1</span> Fundamentação e Coleta de Dados:</a></li>
+  </ul></li>
+  <li><a href="#próximos-passos" id="toc-próximos-passos" class="nav-link" data-scroll-target="#próximos-passos"><span class="header-section-number">3.2</span> Próximos passos:</a>
+  <ul class="collapse">
+  <li><a href="#engenharia-de-features-e-geração-dos-triplets" id="toc-engenharia-de-features-e-geração-dos-triplets" class="nav-link" data-scroll-target="#engenharia-de-features-e-geração-dos-triplets"><span class="header-section-number">3.2.1</span> Engenharia de Features e Geração dos Triplets:</a></li>
+  <li><a href="#fine-tuning-e-geração-de-embeddings" id="toc-fine-tuning-e-geração-de-embeddings" class="nav-link" data-scroll-target="#fine-tuning-e-geração-de-embeddings"><span class="header-section-number">3.2.2</span> Fine-Tuning e Geração de Embeddings:</a></li>
+  <li><a href="#construção-da-infraestrutura-de-busca-e-api" id="toc-construção-da-infraestrutura-de-busca-e-api" class="nav-link" data-scroll-target="#construção-da-infraestrutura-de-busca-e-api"><span class="header-section-number">3.2.3</span> Construção da Infraestrutura de Busca e API:</a></li>
+  <li><a href="#implementação-do-frontend-e-da-lógica-de-conversação" id="toc-implementação-do-frontend-e-da-lógica-de-conversação" class="nav-link" data-scroll-target="#implementação-do-frontend-e-da-lógica-de-conversação"><span class="header-section-number">3.2.4</span> Implementação do Frontend e da Lógica de Conversação:</a></li>
+  <li><a href="#automação-e-devops" id="toc-automação-e-devops" class="nav-link" data-scroll-target="#automação-e-devops"><span class="header-section-number">3.2.5</span> Automação e DevOps:</a></li>
+  </ul></li>
+  <li><a href="#arquitetura-da-solução" id="toc-arquitetura-da-solução" class="nav-link" data-scroll-target="#arquitetura-da-solução"><span class="header-section-number">3.3</span> Arquitetura da Solução</a></li>
+  <li><a href="#fluxo-de-uma-requisição-exemplo-despensa-virtual" id="toc-fluxo-de-uma-requisição-exemplo-despensa-virtual" class="nav-link" data-scroll-target="#fluxo-de-uma-requisição-exemplo-despensa-virtual"><span class="header-section-number">3.4</span> Fluxo de uma Requisição (Exemplo: “Despensa Virtual”):</a></li>
   </ul>
 </nav>
     </div>
@@ -200,17 +212,45 @@ div.csl-indent {
 </header>
 
 
-<p>O processo de implementação do projeto foi estruturado em fases sequenciais e iterativas. Cada fase foi projetada para construir uma parte fundamental da solução, permitindo validações contínuas e garantindo que o produto final esteja alinhado com os objetivos de impacto social e viabilidade técnica.</p>
-<ol type="1">
-<li><p>Fundamentação e Coleta de Dados: A fase inicial consiste na criação de um dataset proprietário através de web scraping em portais de receitas brasileiros. O foco é capturar não apenas ingredientes e modo de preparo, mas metadados contextuais ricos, como tags, tempo de preparo e avaliações de usuários.</p></li>
-<li><p>Engenharia de Features e Geração dos Triplets: Utilizando o dataset bruto, implementar o script do “Funil Inteligente” em Python com Pandas para gerar scores heurísticos (saudabilidade, complexidade, custo) e, com base neles, gerar automaticamente o dataset de treinamento triplets.csv.</p></li>
-<li><p>Fine-Tuning e Geração de Embeddings: Nesta fase, o modelo Transformer neuralmind/bert-base-portuguese-cased será especializado através de um processo de fine-tuning com a estratégia TripletLoss, aprendendo a mapear o texto das receitas para um espaço vetorial onde a proximidade matemática reflete a similaridade contextual.</p></li>
-<li><p>Construção da Infraestrutura de Busca e API: Os embeddings gerados seriam indexados em uma base de dados vetorial FAISS. Em paralelo, foi desenvolvida a API principal em FastAPI.</p></li>
-<li><p>Implementação do Frontend e da Lógica de Conversação: A interface seria desenvolvida com foco na experiência do usuário. Implementar algum fluxo para orquestrar a comunicação entre a busca no FAISS e a geração de texto da OpenAI.</p></li>
-<li><p>Automação e DevOps: Configurados pipelines em GitHub Actions para CI/CD e workflows no N8N para tarefas recorrentes, como a atualização de preços.</p></li>
-</ol>
-<section id="arquitetura-da-solução" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="arquitetura-da-solução"><span class="header-section-number">3.1</span> Arquitetura da Solução</h2>
+<p>O processo de desenvolvimento do projeto foi estruturado em fases sequenciais e iterativas. Cada fase foi projetada para construir uma parte fundamental da solução, permitindo validações contínuas e garantindo que o produto final esteja alinhado com os objetivos de impacto social e viabilidade técnica.</p>
+<section id="etapa-inicial" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="etapa-inicial"><span class="header-section-number">3.1</span> Etapa inicial</h2>
+<section id="fundamentação-e-coleta-de-dados" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="fundamentação-e-coleta-de-dados"><span class="header-section-number">3.1.1</span> Fundamentação e Coleta de Dados:</h3>
+<p>A coleta de dados e as análises iniciais foram divididas em 3 etapas:</p>
+<p>1- <strong>Criação de um dataset proprietário através de web scraping em portais de receitas brasileiros</strong> O intuito é capturar não apenas ingredientes e modo de preparo, mas também metadados contextuais ricos, como tags, tempo de preparo e avaliações de usuários.</p>
+<p>2- <strong>Guia Alimentar para a População Brasileira</strong> O objetivo principal dessa etapa é mapear os princípios do Guia, a fim de aprimorar a fundamentação teórica do projeto.</p>
+<p>O Guia Alimentar para a População Brasileira é uma das estratégias para implementação da diretriz de promoção da alimentação adequada e saudável que integra a Política Nacional de Alimentação e Nutrição. Por este motivo, seus princípios serão tomados como base para todas as etapas posteriores do desenvolvimento deste projeto.</p>
+<p>3- <strong>Dados de preços históricos do CEPEA</strong></p>
+<p>O Centro de Estudos Avançados em Economia Aplicada (CEPEA) publica indicadores de preços para diversos produtos agropecuários. O intuito da coleta inicial é reunir dados históricos dos preços dos produtos a fim de possibilitar uma análise das séries temporais e identificação de tendências de mercado e sazonalidades.</p>
+<p>De acordo com dados divulgados pela Organização Mundial da Saúde em 2009, o consumo insuficiente de frutas e vegetais está entre os dez principais fatores de risco de morte por todas as causas. Entre as populações de média renda estima-se que ocorra 0,9 milhões de mortes atribuídas a este fator de risco anualmente (3,9% do total de mortes) e para a população de alta renda, aproximadamente, 0,2 milhões de mortes anualmente (2,5% do total de mortes). A partir dessa informação, a coleta e análise exploratória dos dados de hortifruti do CEPEA foram priorizados</p>
+</section>
+</section>
+<section id="próximos-passos" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="próximos-passos"><span class="header-section-number">3.2</span> Próximos passos:</h2>
+<section id="engenharia-de-features-e-geração-dos-triplets" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="engenharia-de-features-e-geração-dos-triplets"><span class="header-section-number">3.2.1</span> Engenharia de Features e Geração dos Triplets:</h3>
+<p>Utilizando o dataset bruto, implementar o script do “Funil Inteligente” em Python com Pandas para gerar scores heurísticos (saudabilidade, complexidade, custo) e, com base neles, gerar automaticamente o dataset de treinamento triplets.csv.</p>
+</section>
+<section id="fine-tuning-e-geração-de-embeddings" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="fine-tuning-e-geração-de-embeddings"><span class="header-section-number">3.2.2</span> Fine-Tuning e Geração de Embeddings:</h3>
+<p>Nesta fase, o modelo Transformer neuralmind/bert-base-portuguese-cased será especializado através de um processo de fine-tuning com a estratégia TripletLoss, aprendendo a mapear o texto das receitas para um espaço vetorial onde a proximidade matemática reflete a similaridade contextual.</p>
+</section>
+<section id="construção-da-infraestrutura-de-busca-e-api" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="construção-da-infraestrutura-de-busca-e-api"><span class="header-section-number">3.2.3</span> Construção da Infraestrutura de Busca e API:</h3>
+<p>Os embeddings gerados seriam indexados em uma base de dados vetorial FAISS. Em paralelo, foi desenvolvida a API principal em FastAPI.</p>
+</section>
+<section id="implementação-do-frontend-e-da-lógica-de-conversação" class="level3" data-number="3.2.4">
+<h3 data-number="3.2.4" class="anchored" data-anchor-id="implementação-do-frontend-e-da-lógica-de-conversação"><span class="header-section-number">3.2.4</span> Implementação do Frontend e da Lógica de Conversação:</h3>
+<p>A interface seria desenvolvida com foco na experiência do usuário. Implementar algum fluxo para orquestrar a comunicação entre a busca no FAISS e a geração de texto da OpenAI.</p>
+</section>
+<section id="automação-e-devops" class="level3" data-number="3.2.5">
+<h3 data-number="3.2.5" class="anchored" data-anchor-id="automação-e-devops"><span class="header-section-number">3.2.5</span> Automação e DevOps:</h3>
+<p>Configurados pipelines em GitHub Actions para CI/CD e workflows no N8N para tarefas recorrentes, como a atualização de preços.</p>
+</section>
+</section>
+<section id="arquitetura-da-solução" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="arquitetura-da-solução"><span class="header-section-number">3.3</span> Arquitetura da Solução</h2>
 <p>A arquitetura foi desenhada para ser modular, escalável e de alta performance, separando claramente as responsabilidades de cada componente. O sistema opera em quatro camadas principais que se comunicam via APIs:</p>
 <ul>
 <li><p>Camada de Apresentação (Frontend): É a interface com a qual o usuário interage. Ela é responsável por apresentar as funcionalidades como a “Despensa Virtual” e as “Trocas Inteligentes” e por comunicar-se com a camada de backend.</p></li>
@@ -222,8 +262,8 @@ div.csl-indent {
 <li><p>Camada de Automação: Orquestrada por ferramentas como N8N (para scraping de preços e automação de dados) e GitHub Actions (para integração e entrega contínua - CI/CD), garantindo que o sistema seja resiliente, atualizado e facilmente sustentável.</p></li>
 </ul>
 </section>
-<section id="fluxo-de-uma-requisição-exemplo-despensa-virtual" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="fluxo-de-uma-requisição-exemplo-despensa-virtual"><span class="header-section-number">3.2</span> Fluxo de uma Requisição (Exemplo: “Despensa Virtual”):</h2>
+<section id="fluxo-de-uma-requisição-exemplo-despensa-virtual" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="fluxo-de-uma-requisição-exemplo-despensa-virtual"><span class="header-section-number">3.4</span> Fluxo de uma Requisição (Exemplo: “Despensa Virtual”):</h2>
 <p>O processo de uma interação típica do usuário demonstra como as camadas se comunicam:</p>
 <ul>
 <li><p>O usuário informa no aplicativo React os ingredientes que possui (ex: “arroz, ovo, tomate”).</p></li>
@@ -236,6 +276,9 @@ div.csl-indent {
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-ibge_pof_2017_2018" class="csl-entry" role="listitem">
+IBGE - Instituto Brasileiro de Geografia e Estatística. 2019. <span>“POF 2017-2018: Famílias Com Até r$ 1,9 Mil Destinam 61,2% de Seus Gastos a Alimentação e Habitação.”</span> Agência de Notícias IBGE. <a href="https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/25598-pof-2017-2018-familias-com-ate-r-1-9-mil-destinam-61-2-de-seus-gastos-a-alimentacao-e-habitacao">https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/25598-pof-2017-2018-familias-com-ate-r-1-9-mil-destinam-61-2-de-seus-gastos-a-alimentacao-e-habitacao</a>.
+</div>
 <div id="ref-whats_cooking_kaggle" class="csl-entry" role="listitem">
 Kaggle. 2015. <span>“What’s Cooking: Recipe Ingredients Dataset.”</span> Kaggle competition dataset. <a href="https://www.kaggle.com/competitions/whats-cooking">https://www.kaggle.com/competitions/whats-cooking</a>.
 </div>
@@ -244,6 +287,9 @@ Ministério da Saúde. 2014. <em>Guia Alimentar Para a População Brasileira</e
 </div>
 <div id="ref-tabela_taco" class="csl-entry" role="listitem">
 NEPA - Núcleo de Estudos e Pesquisas em Alimentação, UNICAMP. 2011. <span>“Tabela Brasileira de Composição de Alimentos (TACO).”</span> <a href="http://www.nepa.unicamp.br/taco/taco_arquivos/Tabela_TACO_4_edicao_ampliada_e_revisada.pdf">http://www.nepa.unicamp.br/taco/taco_arquivos/Tabela_TACO_4_edicao_ampliada_e_revisada.pdf</a>.
+</div>
+<div id="ref-global_health_risks" class="csl-entry" role="listitem">
+World Health Organization. 2009. <em>GLOBAL HEALTH RISKS - Mortality and Burden of Disease Attributable to Selected Major Risks</em>. Geneva: World Health Organization. <a href="https://iris.who.int/bitstream/handle/10665/44203/9789241563871_eng.pdf?sequence=1">https://iris.who.int/bitstream/handle/10665/44203/9789241563871_eng.pdf?sequence=1</a>.
 </div>
 </div>
 </section>
