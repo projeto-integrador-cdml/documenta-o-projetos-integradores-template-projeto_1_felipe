@@ -1,13 +1,13 @@
 # Metodologia
 
-Para garantir a agilidade, a adaptabilidade e o foco no impacto social, o desenvolvimento deste projeto será norteado por uma metodologia híbrida, combinando princípios do Scrum (Breves reuniões par alinhamento de tarefas), para gestão de tarefas e entregas iterativas, com o CRISP-DM, para guiar as etapas do ciclo de vida da ciência de dados.
-Essa abordagem nos permite construir e validar hipóteses rapidamente em sprints de uma ou duas semanas, enquanto mantemos uma estrutura robusta para a exploração de dados e modelagem.
+Para garantir a agilidade, a adaptabilidade e o foco no impacto social, o desenvolvimento deste projeto será norteado por uma metodologia híbrida, combinando  CRISP-DM- para guiar as etapas do ciclo de vida da ciência de dados- e princípios do Scrum -realização de reuniões periódicas de alinhamento, criação de um Backlog do produto e priorização do Backlog da Sprint- visando fazer entregas iterativas e incrementais.
+Essa abordagem permite construir e validar hipóteses rapidamente em sprints de uma ou duas semanas, enquanto uma estrutura robusta para a exploração de dados e modelagem é mantida
 
 O fluxo de desenvolvimento é dividido nas seguintes etapas macro:
 
-- Coleta e Preparação de Dados: A base do nosso sistema. Esta etapa envolve o web scraping massivo de fontes de dados brasileiras (portais de receitas, blogs de culinária popular) para construir um dataset rico. Em paralelo, utilizaremos a estratégia do "Funil Inteligente": um conjunto de scripts em Python com heurísticas para etiquetar automaticamente cada receita com features de contexto, como score_de_saudabilidade, score_de_complexidade, score_de_custo e tags_contextuais.
+- Coleta e Preparação de Dados: Esta etapa envolve o web scraping massivo de fontes de dados brasileiras (portais de receitas, blogs de culinária popular) para construir um dataset rico. Em paralelo, será utilizada a estratégia do "Funil Inteligente", que é um conjunto de scripts em Python com heurísticas para etiquetar automaticamente cada receita com features de contexto, como score_de_saudabilidade, score_de_complexidade, score_de_custo e tags_contextuais.
 
-- Modelagem e Treinamento da IA: O núcleo do projeto. Utilizando o dataset de trios (âncora, positivo, negativo) gerado na etapa anterior, faremos o fine-tuning de um modelo Transformer (BERT). O objetivo é especializar o modelo para entender o contexto nutricional, financeiro e emocional do nosso público-alvo, gerando embeddings (vetores) contextuais para cada receita.
+- Modelagem e Treinamento da IA: O núcleo do projeto. Utilizando o dataset de trios (âncora, positivo, negativo) gerado na etapa anterior, será realizado o fine-tuning de um modelo Transformer (BERT). O objetivo é especializar o modelo para entender o contexto nutricional, financeiro e emocional do público-alvo, gerando embeddings (vetores) contextuais para cada receita.
 
 - Desenvolvimento do Backend e API: Construção de uma API robusta em FastAPI que servirá como o cérebro do sistema, expondo endpoints para as funcionalidades principais, incluindo a busca por similaridade contextual e a lógica de recomendação.
 
