@@ -52,17 +52,18 @@ O Quarto é uma ferramenta poderosa e flexível que integra código, texto e sa�
 
 Dominar o Quarto neste projeto não só simplificará a criação da sua documentação, mas também desenvolverá uma habilidade valiosa para sua carreira em dados.
 
-✅ Dicas para o Sucesso na Documentação
-Para garantir que sua documentação seja completa, clara e eficaz, considere as seguintes dicas ao utilizar este template:
+## 🤖 Responsabilidades do Agente de IA Cientista de Dados
 
-Comece Cedo: Não deixe a documentação para a última hora. Comece a preencher as seções à medida que avança no desenvolvimento do seu projeto.
-Seja Detalhado: Explique suas escolhas, o porquê de certas abordagens e os desafios encontrados. Detalhes ajudam a demonstrar seu entendimento e o processo de pensamento.
-Use Imagens e Gráficos: Sempre que possível, utilize diagramas, capturas de tela e gráficos para ilustrar conceitos, resultados e a arquitetura do seu projeto. O diretório imagens/ está pronto para isso.
-Revise e Peça Feedback: Peça a colegas ou ao professor para revisarem sua documentação. Uma segunda opinião pode identificar pontos de melhoria e clareza.
-Mantenha a Consistência: Garanta que a terminologia, o estilo de escrita e a formatação sejam consistentes em todo o documento.
-Atualize as Referências: Mantenha seu arquivo refs.bib atualizado com todas as fontes consultadas e citadas no seu trabalho.
+Neste projeto, o Agente de IA com foco em Ciência de Dados desempenha um papel crucial na manipulação e análise de dados nutricionais. Suas principais responsabilidades incluem:
 
-Seguir estas dicas não só aprimorará a qualidade da sua documentação, mas também enriquecerá seu aprendizado e a apresentação do seu Projeto Integrador.
+-   **Coleta e Pré-processamento de Dados:** Utilização da API do USDA FoodData Central para coletar dados nutricionais em formato estruturado (CSV/JSON), com tratamento de dados ausentes e inconsistências.
+-   **Limpeza e Normalização dos Dados:** Garantia da consistência e prontidão dos dados para análise, tratando valores nulos, duplicados e normalizando formatos (ex: unidades de medida).
+-   **Análise Exploratória de Dados (EDA):** Realização de análises para identificar padrões nutricionais, distribuições e insights relevantes, gerando gráficos e visualizações.
+-   **Modelagem e Aplicação de IA:** Construção de modelos para busca semântica e recomendações personalizadas, explorando técnicas de NLP e embedding (BERT, Sentence Transformers, FAISS).
+-   **Documentação e Relatórios Acadêmicos (ABNT):** Documentação completa do processo de coleta, análise e modelagem, seguindo as normas da ABNT e utilizando Quarto para renderização.
+-   **Integração com Outros Agentes:** Colaboração com outros agentes de IA, garantindo que modelos e resultados sejam integrados e documentados para etapas subsequentes do projeto.
+-   **Implementação e Testes de Modelos:** Avaliação de modelos com métricas como precisão, recall e F1 score, validando as recomendações alimentares.
+-   **Comunicação de Resultados e Insights:** Apresentação clara e objetiva dos resultados para stakeholders, utilizando gráficos, resumos e relatórios interativos.
 
 ## 📌 Regras
 
