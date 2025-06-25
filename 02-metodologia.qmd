@@ -1,11 +1,25 @@
 # Metodologia
 
-Explique como o projeto foi desenvolvido: metodologia ágil utilizada, etapas de desenvolvimento, ferramentas.
+Para garantir a agilidade, a adaptabilidade e o foco no impacto social, o desenvolvimento deste projeto será norteado por uma metodologia híbrida, combinando princípios do Scrum (Breves reuniões par alinhamento de tarefas), para gestão de tarefas e entregas iterativas, com o CRISP-DM, para guiar as etapas do ciclo de vida da ciência de dados.
+Essa abordagem nos permite construir e validar hipóteses rapidamente em sprints de uma ou duas semanas, enquanto mantemos uma estrutura robusta para a exploração de dados e modelagem.
+
+O fluxo de desenvolvimento é dividido nas seguintes etapas macro:
+
+- Coleta e Preparação de Dados: A base do nosso sistema. Esta etapa envolve o web scraping massivo de fontes de dados brasileiras (portais de receitas, blogs de culinária popular) para construir um dataset rico. Em paralelo, utilizaremos a estratégia do "Funil Inteligente": um conjunto de scripts em Python com heurísticas para etiquetar automaticamente cada receita com features de contexto, como score_de_saudabilidade, score_de_complexidade, score_de_custo e tags_contextuais.
+
+- Modelagem e Treinamento da IA: O núcleo do projeto. Utilizando o dataset de trios (âncora, positivo, negativo) gerado na etapa anterior, faremos o fine-tuning de um modelo Transformer (BERT). O objetivo é especializar o modelo para entender o contexto nutricional, financeiro e emocional do nosso público-alvo, gerando embeddings (vetores) contextuais para cada receita.
+
+- Desenvolvimento do Backend e API: Construção de uma API robusta em FastAPI que servirá como o cérebro do sistema, expondo endpoints para as funcionalidades principais, incluindo a busca por similaridade contextual e a lógica de recomendação.
+
+- Desenvolvimento do Frontend: Criação da interface do usuário, com foco em uma experiência (UX) empática, acessível e orientada à ação. A interface será projetada para simplificar a jornada do usuário, especialmente em "momentos-gatilho", como o "Modo Sextou".
+
+- Automação e Orquestração: Implementação de pipelines automatizados para tarefas recorrentes, como a atualização de dados de preços ou a re-execução do funil de geração de triplets.
+
+- Integração Contínua e Entrega Contínua (CI/CD): Adoção de práticas de CI/CD para garantir a qualidade do código, a automação dos testes e a agilidade nas implantações em produção.
 
 ## Tecnologias e Ferramentas
 
-- RAG com LlamaIndex e OpenAI
-- Orquestração com N8N
-- Frontend em React, Backend em FastAPI
-- Base vetorizada em FAISS
-- GitHub Actions para CI/CD
+- Python como linguagem principal para ciência de dados e backend.
+- Algum tipo de banco de dados relacional para a relação dos preços atualizados em tempo real
+- BERT (via Hugging Face Transformers) & PyTorch para o treinamento do modelo de linguagem, permitindo a criação dos embeddings contextuais customizados.
+- FAISS (Facebook AI Similarity Search) será a base de dados vetorizada. Após o fine-tuning do BERT, os embeddings de todas as receitas serão armazenados e indexados no FAISS para permitir buscas por similaridade em tempo real com baixíssima latência.
